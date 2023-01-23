@@ -28,6 +28,10 @@ run the following commands:
 >vim
 :set relativenumber
 :set modifiable
+:set scrolloff=9
+
+modifiable → allows you to modify the file
+Scrolloff = 18 Grants Ability To See At Least 18 Lines Above/Below Your Cursor
 >
 in plover gui go tick configure → output → enable at start
 
@@ -52,7 +56,7 @@ move your cursor to the beginning of the line at |starthere| (below)
 <5>  press `#-FR`  
 <3>  press `#H-R`  
 <1>  press `#T-R`  
-<0>  press `#SB`    *starthere*
+<0>  press `#SB`    *starthere* (turn on plover now!)
 <2>  press `#PB`   
 <4>  press `#AB`   
 <6>  press `#-PB`  
@@ -71,53 +75,47 @@ move your cursor to the beginning of the line at |starthere| (below)
 Josiah-modifiers                                                   plover-vim-Josiah-modifiers
 
 <5> make sure you have learnt Emily modifiers before continuing...
-Here we use `-LTZ` as our unique ender (extended steno: `@`)
+Here we use `-LTZ` as our unique ender (for extended steno use `@`)
 
-move your cursor onto the line below, go to end of the line with `ARLTZ`
+{write the sentence below}: (go to end of the line with `ARLTZ`)
 <4>
+`<4>the brown fox jumps over the lazy dog.`
 
-try writing the sentence below:
-`the brown fox jumps over the lazy dog.`
-
-that's strange... where is the space between `<4>` and `the`?
-Plover-vim is built with space suppression which is often more favorable for
-coding (uses {plover:clear_trans_state} internally)
-
+Why is there no space between `<4>` and `the`?
+Plover-vim is built with space suppression which is often more favorable for coding (uses {plover:clear_trans_state} internally)
 press `TRAO*LTZ` (escape)
 press `SKW-RLTZ` (SKW is left hand `i` for fingerspelling)
 press `W-RLTZ` (basically W in vim)
 type `quick` press `AO*LTZ` (performs a space)
-
+<9>
 So then your sentence now should look like:
 `<4>the quick brown fox jumps over the lazy dog.`
 
-move your cursor onto the line below:
-<18>the quick brown fox jumps over the lazy dog.
-
-try writing the sentence below:
-`the brown fox jumps over the lazy dog.`
+{write the sentence below}
+<5>
+`<5>the brown fox jumps over the lazy dog.`
 
 this time we will not explicitly use escape:
 press `#SKW-RLTZ` (SKW is left hand `i` for fingerspelling)
 press `#W-RLTZ` (basically W in vim)
 press `#SKW-LTZ` (SKW is left hand `i` for fingerspelling)
 type `quick` press `AO*LTZ` (performs a space)
-
-move your cursor to the beginning of the line below (`SKW-RLTZ`)
-<11>the quick brown jumpsk over the] lazy dog.
+{move your cursor to the beginning of the line below} (start at the beginning of the line `SKW-RLTZ`)
+<10>the quick brown jumpsk over the] lazy dog.
 
 here we learn the rest of left hand fingerspelling (Abby):
 `SK-LTZ` → e, `WR-LTZ` → u
 control(u) deletes from cursor to start of line
 change the text so that this is shown:
 `jumps over the lazy dog.`
+
+<8>
 solution (spoiler wall):
 `shift(W) w w control(u) e x e shift(e) x`
 steno solution:
 `#W-RLTZ #W-LTZ #W-LTZ WR-FLTZ #SK-LTZ #KP-LTZ #SK-LTZ #SK-RLTZ #KP-LTZ`
 
-move your cursor to the line below:
-<13>
+<7>
 
 let's learn how to do terminal splits using `EU`!
 (go ahead and try the following!)
@@ -125,31 +123,22 @@ let's learn how to do terminal splits using `EU`!
 `SREULTZ` → escape control(w) v (vertical split)
 `OEULTZ` → escape control(w) o (close all windows)
 
-move cursor below:
 <8>
-
 here is the full list of things to do with Josiah modifiers (the defaults):
->python
-prefixes = {
-        "#": "control(j)",
+prefixes = { "#": "control(j)",
         "E": "escape",  # EscapE
         "EU": "control(j) control(w)",  # vim splIt or wIn
         "#EU": "control(r)",  # regIster
         "U": "control(b)",  # tmUx
         "#E": "control(x)",  # Ex command
-        "": "",  # Emily
-        }
->
+        "": "",  # Emily }
+<9>
 
-move cursor below:
-<15>
-
-You may be thinking... What on earth is control(j)? That's a very good
-question
+You may be thinking... What on earth is control(j)? That's a very good question
 control(j) is basically a vim hack from user2
 https://github.com/openstenoproject/plover/discussions/1350#discussioncomment-1905781
 it is written below in case you want to chuck it in your vimrc (recommended!)
-
+<8> {go 16 down}
 >vim
 "do nothing in normal mode
 nore <c-j> <nop> 
@@ -157,7 +146,6 @@ nore <c-j> <nop>
 inore <c-j> <c-\><c-o>
 "escape command mode
 cnoremap <c-j> <esc>
-
 if !has('nvim')
     " escape terminal mode, then return to terminal mode
     set termwinkey=<c-j>
@@ -166,9 +154,7 @@ else
     tnoremap <c-j> <C-\><C-n>
 endif
 >
-
-move cursor:
-<26>
+<16>
 
 If you have made it this far, well done! Congratulations on completing
 Josiah-modifiers!
@@ -180,9 +166,27 @@ command-object                                                   plover-vim-comm
 command-object...
 
 What is command object?
-commands of the form:
-<command><middle><object>
-for example
+essentially, commands of the form:
+`<command><middle><object>`
+for example: `ciw`, `gcip`, `ya}`
 
+the unique ender for command object is `-TSZ` (extended steno: `@L`)
+ring finger on `-T` and pinky on `-SZ` or
+ring finger on `-TS` and pinky on `-Z`
+let's first learn `c<middle><object>`
+`c` → `-B` (Blot)
+`i` → `E` (inner: closer to the middle of the keyboard)
+`a` → `U` (outer: away from the middle of the keyboard)
+
+<16> why not[just] use d instead of c? Well {I guess}d <just>is not needed in plover vim...
+
+using the information above make the line above look like the line below:
+
+`why not[] use d instead of c? Well d is not needed in plover vim...`
+
+possible solution (spoilers!):
+I ci] ca} W ca>
+`#SKW-RLTZ KWRO*EBTSZ KWRAO*UBTSZ #W-RLTZ KWRA*EBTSZ`
+`#SKW@R KWRO@*EBL KWRAO@*UBL #W@R KWRA@*UBL`
 ==============================================================================
  vim:tw=78:ts=2:et:ft=help:norl:
