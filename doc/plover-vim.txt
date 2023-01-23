@@ -1,0 +1,25 @@
+*plover-vim-tutor* *plover-vim*
+
+help + tutorials for plover-vim
+
+==============================================================================
+CONTENTS                                                          *plover-vim-contents*
+
+Abstract                                                          |plover-vim-abstract|
+
+==============================================================================
+Abstract                                                          *plover-vim-abstract*
+>lua
+  cmp.setup {
+    mapping = {
+      ['<C-g>'] = cmp.mapping(function(fallback)
+        vim.api.nvim_feedkeys(vim.fn['copilot#Accept'](vim.api.nvim_replace_termcodes('<Tab>', true, true, true)), 'n', true)
+      end)
+    },
+    experimental = {
+      ghost_text = false -- this feature conflict with copilot.vim's preview.
+    }
+  }
+<
+==============================================================================
+ vim:tw=78:ts=2:et:ft=help:norl:
