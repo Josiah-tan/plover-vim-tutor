@@ -89,7 +89,7 @@ write out the sentence with steno...
 Why is there no space between `<7>` and `the`?
 Plover-vim is built with space suppression which is often more favorable for coding (uses {plover:clear_trans_state} internally)
 
-<5>now let's do some editing!
+<6>now let's do some editing!
 {read instructions below}
 `SKW-RLTZ` → `I` (SKW is left hand fingerspelling)
 `TRAO*LTZ` → `escape`
@@ -109,8 +109,8 @@ How? Well, we use `#` to `prefix` the command with `escape`
 `KWEUBG` → `quick` 
 `AO*LTZ` → `space` (performs a space)
 {write the sentence below}
-<9>the brown fox jumps over the lazy dog.
-`<5>the quick brown fox jumps over the lazy dog.`
+<8>the brown fox jumps over the lazy dog.
+`<8>the quick brown fox jumps over the lazy dog.`
 
 let's learn the rest of left hand fingerspelling (Abby):
 `SK-LTZ` → e
@@ -217,7 +217,7 @@ z is often also used for folding code
 `#SR-FTZ` → gv (go to last highlight)
 `TRAO*LTZ` → `escape`
 {follow above on sentence below}
-<6>highlight me then escape
+<6>highlight me!
 
 Now we learn `r<object>` 
 `r` → `-R` (`Replace`)
@@ -282,7 +282,7 @@ here are all of the default available commands:
 ==============================================================================
 command-object                                                   *plover-vim-command-object*
 
-<6> make sure to have completed |plover-vim-Josiah-modifiers| before learning
+<5> make sure to have completed |plover-vim-Josiah-modifiers| before learning
 command-object...
 
 What is command object?
@@ -296,7 +296,7 @@ let's first learn `c<middle><object>`
 `c` → `-B` (Blot)
 `i` → `E` (inner: closer to the middle of the keyboard)
 `a` → `U` (outer: away from the middle of the keyboard)
-<8>{read instructions}
+<7>{read instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `#W-RLTZ × 3` → `W × 3` (next word)
 `WR-FLTZ` → `control(u)` (deletes to start of line)
@@ -360,7 +360,7 @@ why do{} use -P? It's because it[] means coPy...
 `why do we use -P? It's because it obviously means coPy...`
 
 The final test... Let's do this
-<5>{instructions}
+<4>{instructions}
 `#SKW-RLTZ` → escape I (SKW is left hand `i` for fingerspelling)
 `WEFRLTSZ` → `viW` (visualise inner word)
 `TPWR-LTZ` → `~` (toggle case)
