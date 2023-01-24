@@ -20,7 +20,8 @@ quick-install                                                      *plover-vim-q
 get `escaped_customised.py` and add it to your dictionaries:
 https://github.com/Josiah-tan/plover-vim/tree/main/templates/tutor
 
-if you want to try extended steno instead, then get `extended/escaped_customised.py`, you will need to change to the plover-stenotype-vim for this to work.
+if you want to try extended steno instead, then select `extended/escaped_customised.py`
+in plover gui go select configure → system → plover-stenotype-vim
 
 ==============================================================================
 quick-setup                                                        *plover-vim-quick-setup*
@@ -32,7 +33,7 @@ run the following commands:
 :set scrolloff=9
 
 modifiable → allows you to modify the file
-Scrolloff = 18 Grants Ability To See At Least 18 Lines Above/Below Your Cursor
+Scrolloff = 9 Grants Ability To See At Least 9 Lines Above/Below Your Cursor
  
 in plover gui go tick configure → output → enable at start
 
@@ -78,54 +79,79 @@ Josiah-modifiers                                                   *plover-vim-J
 <5> make sure you have learnt Emily modifiers before continuing...
 Here we use `-LTZ` as our unique ender (for extended steno use `@`)
 
-{write the sentence below}: (go to end of the line with `ARLTZ`)
-<4>
-`<4>the brown fox jumps over the lazy dog.`
-
-Why is there no space between `<4>` and `the`?
+{read instructions below}
+`ARLTZ` → `A` (end of the line)
+write out the sentence with steno...
+{write sentence below}: 
+<7>
+`<7>the brown fox jumps over the lazy dog.`
+{notes}:
+Why is there no space between `<7>` and `the`?
 Plover-vim is built with space suppression which is often more favorable for coding (uses {plover:clear_trans_state} internally)
-press `TRAO*LTZ` (escape)
-press `SKW-RLTZ` (SKW is left hand `i` for fingerspelling)
-press `W-RLTZ` (basically W in vim)
-type `quick` press `AO*LTZ` (performs a space)
-<9>
-So then your sentence now should look like:
-`<4>the quick brown fox jumps over the lazy dog.`
 
+<5>now let's do some editing!
+{read instructions below}
+`SKW-RLTZ` → `I` (SKW is left hand fingerspelling)
+`TRAO*LTZ` → `escape`
+`W-RLTZ` → `W` (next word)
+`SKW-LTZ` → `i` (SKW is left hand fingerspelling)
+`KWEUBG` → `quick` 
+`AO*LTZ` → `space` (performs a space)
+{edit the sentence}
+<9>the brown fox jumps over the lazy dog.
+`<9>the quick brown fox jumps over the lazy dog.`
+
+<3>let's do this again but more efficiently!
+How? Well, we use `#` to `prefix` the command with `escape`
+{instructions}
+`#SKW-RLTZ` → escape I (SKW is left hand `i` for fingerspelling)
+`#W-RLTZ` → `W` (next word)
+`KWEUBG` → `quick` 
+`AO*LTZ` → `space` (performs a space)
 {write the sentence below}
-<5>
-`<5>the brown fox jumps over the lazy dog.`
+<9>the brown fox jumps over the lazy dog.
+`<5>the quick brown fox jumps over the lazy dog.`
 
-this time we will not explicitly use escape:
-press `#SKW-RLTZ` (SKW is left hand `i` for fingerspelling)
-press `#W-RLTZ` (basically W in vim)
-press `#SKW-LTZ` (SKW is left hand `i` for fingerspelling)
-type `quick` press `AO*LTZ` (performs a space)
-{move your cursor to the beginning of the line below} (start at the beginning of the line `SKW-RLTZ`)
-<10>the quick brown jumpsk over the] lazy dog.
-
-here we learn the rest of left hand fingerspelling (Abby):
-`SK-LTZ` → e, `WR-LTZ` → u
-control(u) deletes from cursor to start of line
-change the text so that this is shown:
+let's learn the rest of left hand fingerspelling (Abby):
+`SK-LTZ` → e
+`WR-LTZ` → u
+<6>{read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`#W-RLTZ × 3` → `W × 3` (next word)
+`WR-FLTZ` → `control(u)` (deletes to start of line)
+`#SK-LTZ` → `e` (end of next word)
+`#KP-LTZ` → `x` (delete `k`)
+`#SK-RLTZ × 2` → `E × 2` (end of next word)
+`#KP-LTZ` → `x` (delete `]`)
+{edit sentence}
+<9>the quick brown jumpsk over the] lazy dog.
 `jumps over the lazy dog.`
 
-<8>
-solution (spoiler wall):
-`shift(W) w w control(u) e x e shift(e) x`
-steno solution:
-`#W-RLTZ #W-LTZ #W-LTZ WR-FLTZ #SK-LTZ #KP-LTZ #SK-LTZ #SK-RLTZ #KP-LTZ`
-
-<6>
-
 let's learn how to do terminal splits using `EU`!
-(go ahead and try the following!)
+<4>{try the following}
 `SEULTZ` → escape control(w) s (horizontal split)
 `SREULTZ` → escape control(w) v (vertical split)
 `OEULTZ` → escape control(w) o (close all windows)
 
-<8>
-here is the full list of things to do with Josiah modifiers (the defaults):
+<5>let's have a little bit of fun!
+{read instructions}
+`#S-R` → `1 down`
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`SR-FLTZ` → `control(v)` (block-wise visual mode)
+`#P-R` → `3 down`
+`TKPW-LTZ` → `g`
+`AFLTZ` → `control(a)` (increment)
+<8>{try the following}
+0
+0
+0
+0
+`1`
+`2`
+`3`
+`4`
+<9> {read below}
+Here the available defaults for Josiah modifiers feel free to change to your liking:
 prefixes = { "#": "control(j)",
         "E": "escape",  # EscapE
         "EU": "control(j) control(w)",  # vim splIt or wIn
@@ -141,19 +167,19 @@ https://github.com/openstenoproject/plover/discussions/1350#discussioncomment-19
 it is written below in case you want to chuck it in your vimrc (recommended!)
 <6> {go 16 down}
 >vim
-"do nothing in normal mode
-nore <c-j> <nop> 
-"escape insert mode, then return to insert mode afterwards
-inore <c-j> <c-\><c-o>
-"escape command mode
-cnoremap <c-j> <esc>
-if !has('nvim')
-    " escape terminal mode, then return to terminal mode
-    set termwinkey=<c-j>
-else
-    " escape terminal mode, does not return to terminal mode :<
-    tnoremap <c-j> <C-\><C-n>
-endif
+    "do nothing in normal mode
+    nore <c-j> <nop> 
+    "escape insert mode, then return to insert mode afterwards
+    inore <c-j> <c-\><c-o>
+    "escape command mode
+    cnoremap <c-j> <esc>
+    if !has('nvim')
+        " escape terminal mode, then return to terminal mode
+        set termwinkey=<c-j>
+    else
+        " escape terminal mode, does not return to terminal mode :<
+        tnoremap <c-j> <C-\><C-n>
+    endif
  
 <16>
 
@@ -165,70 +191,69 @@ miscellaneous                                                    *plover-vim-mis
 
 <8> make sure to have completed |plover-vim-Josiah-modifiers| before learning
 miscellaneous commands...
-
-What is miscellaneous?
+What are miscellaneous commands?
 Essentially, commands strictly in the form:
 `<command><object>`
-<6>
-The commands of the form are not covered:
+<5> The commands of the form are not covered:
 <command><something-in-the-middle><object>
 i.e. ciw |plover-vim-command-object|, ftd |plover-vim-find-object|
 these are covered in later sections of this document
 
-<6>
-the unique ender for |plover-vim-miscellaneous| is `-TZ` (extended steno: `@G`)
-ring finger on `-T` and pinky on `-Z` or
+<6> the unique ender for |plover-vim-miscellaneous| is `-TZ` (extended steno: `@G`)
+ring finger on `-T` and pinky on `-Z` 
 let's first learn `z<object>`
 `z` → `-FPB (ZeN)
-{try the following}:
-<6>
+<4>{try the following}:
 `STKPW-FPBTZ` → zz (center screen middle)
 `PW-FPBTZ` → zb (center screen bottom)
 `T-FPBTZ` → zt (center screen zt)
 
 z is often also used for folding code
-<5>
-the g command `g<object>`: 
+<6> the g command `g<object>`: 
 `g` → `-F` (the Good Spot - The Primeagen)
-<6>{highlight me} with `#SR-RLTZ`, then {escape} `TRAO*LTZ`
-Now press `#SR-FTZ` (gv), it should take you to your last highlight!
-Then {escape} `TRAO*LTZ`.
+<2>{read instructions}
+`#SR-RLTZ` → `V` (visualise line)
+`TRAO*LTZ` → `escape`
+`#SR-FTZ` → gv (go to last highlight)
+`TRAO*LTZ` → `escape`
+{follow above on sentence below}
+<6>highlight me then escape
 
 Now we learn `r<object>` 
 `r` → `-R` (`Replace`)
-Fix the capitalisation of the sentence below:
-<7>the primeagen made his good spot video private...
-`<2>the Primeagen made his Good Spot video private...`
-use the following to edit the text:
-`W-LTZ` (forward a word)
-`P-LTZ` (replace with P)
-`W-LTZ` x3 (forward 3 words)
-`TKPW-FRTZ` (replace with G)
-move forward a word and replace s with S
-<9>
+<4>{read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`W-RLTZ` → `W` (forward a word)
+`P-LTZ` → `rP`(replace with P)
+`W-LTZ × 3` → `w × 3`  (forward 3 words)
+`TKPW-FRTZ` → `rG` (replace with G)
+`W-LTZ` → `w` (forward a word)
+`S-PTZ` → `rS` (replace with S)
+{edit sentence}
+<9>The primeagen made his good spot video private...
+`<9>The Primeagen made his Good Spot video private...`
 
-let's learn the `repeat` operation:
-`repeat` → `#-R` `(rePeat)`
-very good for things like yy, cc
-in order to repeat use `#-P`
-
+<3>let's learn the `repeat` operation:
+`repeat` → `#-P` `(rePeat)`
+<3>{read instructions}
+`#KWR-PTZ` → `yy` (yank line)
+`#P-LTZ` → `p` (paste)
+{follow above on sentence below}
 <7> without repeat you would have to double tap...
 `<7> without repeat you would have to double tap...`
 `<7> without repeat you would have to double tap...`
-{instructions}
-`#KWR-PTZ` → yy (yank entire line)
-`#P-LTZ` → p (paste)
 
-<8> a little bit of revision {go to start of line first}:
-<1> congratulation] o> learnin} miscellaneoup commandd!
-`<1> congratulations on learning miscellaneous commands!`
-{instructions}
+<4> a little bit of revision {go to start of line first}:
+{read instructions}
 `ARLTZ` → A (go to end of the line)
 `SK-FTZ` → ge (end of the previous word)
 replace with appropriate characters using `-P`
 good luck!
+{edit sentence}
+<7> congratulation] o> learnin} miscellaneoup commandd!
+`<1> congratulations on learning miscellaneous commands!`
 
-<8> {go down 22 lines}
+<3> {go down 24 lines}
 here are all of the default available commands:
 >json
     {
@@ -252,8 +277,7 @@ here are all of the default available commands:
         "#EU": "<escape> shift(quotedbl) <objects>", # regIster
     }
  
-<22> if this tutorial gets popular in the future, I may make more tutorials for miscellaneous
-covering the rest of the features listed here
+<24> if this tutorial gets popular in the future, I may make more tutorials for miscellaneous commands covering the rest of the features listed here
 
 ==============================================================================
 command-object                                                   *plover-vim-command-object*
@@ -265,77 +289,107 @@ What is command object?
 essentially, commands of the form:
 `<command><middle><object>`
 for example: `ciw`, `gcip`, `ya}`
-<7> {go to start of line `SKW-RLTZ`}
-the unique ender for command object is `-LTSZ` (extended steno: `@L`)
+<7>the unique ender for command object is `-LTSZ` (extended steno: `@L`)
 ring finger on `-T` and pinky on `-SZ` or
 ring finger on `-TS` and pinky on `-Z`
+
 let's first learn `c<middle><object>`
 `c` → `-B` (Blot)
 `i` → `E` (inner: closer to the middle of the keyboard)
 `a` → `U` (outer: away from the middle of the keyboard)
-{edit the line below}:
-<9>you think plover-vim is hard to learn? Nah. (not really)
+<8>{read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`#W-RLTZ × 3` → `W × 3` (next word)
+`WR-FLTZ` → `control(u)` (deletes to start of line)
+`KWR*UBLTSZ` → `ca)` (deletes around parentheses)
+{edit sentence}
+<5>you think plover-vim is hard to learn? Nah. (not really)
 `plover-vim is hard to learn? Nah.`
 
-press `#W-RLTZ` three times
-press `WR-FLTZ` to delete to the start of the line
-press `KWR*UBLTSZ` to delete around parentheses
-
-{edit the line below}:
+<3>{read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`KWRO*EBLTSZ` → `ci]` (delete inner bracket)
+`KWRAO*UBLTSZ` → `ca}` (delete inner brace)
+`#W-RLTZ` → `W` (next word)
+`KWRA*EBLTSZ` → `ca>` (delete inner angle bracket)
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+{edit sentence}
 <8> why not[just] use d instead of c? Well {I guess}d <just>is not needed in plover vim...
-`why not[] use d instead of c? Well d is not needed in plover vim...`
+`<7> why not[] use d instead of c? Well d is not needed in plover vim...`
 
-
-
-
-<6>
-possible solution (spoilers!):
-Qwerty: I ci] ca} W ca>
-steno: `#SKW-RLTZ KWRO*EBLTSZ KWRAO*UBLTSZ #W-RLTZ KWRA*EBLTSZ`
-extended: `#SKW@R KWRO@*EBL KWRAO@*UBL #W@R KWRA@*UBL`
-<5> {go to start of line `SKW-RLTZ`}
 let's learn how to yank and paste text objects!
-{follow the instructions below}
-<2> yank me! 
-`<2> yank me! yank me!`
-press `#W-RLTZ` (go to next word)
-press `WUPLTSZ` (yank around word)
-press `#ARLTZ` (go to end of line)
-press `#P-LTZ` (paste)
-press `#PW-RLTZ` twice (go back two words)
-press `WERLTZ` (yank inner word)
-go to end of line and paste
-<9> {go to start of line `SKW-RLTZ`}
+<4>{read instructions}
+`WURPLTSZ` → `yaW` (yank around word)
+`#ARLTZ` → `A` (go to end of line)
+`#P-LTZ` → `p` (paste)
+`#PW-RLTZ × 2` → `b × 2` (backwards 2 words)
+`WERLTZ` → `yiw` (yank inner word)
+`#ARLTZ` → `A` (go to end of line)
+`#P-LTZ` → `p` (paste)
+{edit sentence}
+<9>yank me 
+`<9>yank me <9>yank me`
 
 Let's learn how to visualise (highlight) text objects!
-{follow the instructions below to properly case the words}
-<3>wHAT DOES -F even stand for? Fish? Frisbee? Fisualise?
-`<3>What does -F even stand for? Fish? Frisbee? Fisualise?`
-press `#SK-RLTZ` (go to end of word)
-press `WEFLTSZ` (visualise inner word)
-press `TPWR-LTZ` (toggle case)
-press `WEFLTSZ` (visualise inner word)
-press `WR-LTZ` (u)
-<7> {go to start of line `SKW-RLTZ`}
+<4>{instructions}
+`#SKW-RLTZ` → escape I (SKW is left hand `i` for fingerspelling)
+`WEFRLTSZ` → `viW` (visualise inner word)
+`TPWR-LTZ` → `~` (toggle case)
+`#W-RLTZ` → `W` (next word)
+`WEFLTSZ` (visualise inner word)
+`WR-LTZ` (u)
+{edit sentence}
+<8>wHAT DOES -F even stand for? Fish? Frisbee? Fisualise?
+`<9>What does -F even stand for? Fish? Frisbee? Fisualise?`
 
 let's combine both yank and highlight on braces and brackets.
-<3>`{ do}[ we] yank words from here`
-{paste text from above to the line below}:
-<2>why{}[] use -P? It's because it obviously means coPy...
-`<2> why do we use -P? It's because it obviously means coPy...`
-press `KWR@*EPLTSZ` (yank inner brace)
-press `#T-R` (go down 2 lines)
-press `KWRAO*UFLTSZ` (visualise outer brace)
-press `#P-LTZ` (paste)
-press `#T-B` (go up 2 lines)
-press `KWRO*EPLTSZ` (yank inner bracket)
-go down two lines visualise and paste
-<9> {go to start of line `SKW-RLTZ`}
+<4>{instructions}
+`#SKW-RLTZ` → escape I (SKW is left hand `i` for fingerspelling)
+`KWRAO*EPLTSZ` (yank inner brace)
+`#S-R` (down 1 line)
+`KWRAO*UFLTSZ` (visualise outer brace)
+`#P-LTZ` (paste)
+<6>
+`#S-B` (up 1 line)
+`KWRO*EPLTSZ` (yank inner bracket)
+`#S-R` (down 1 line)
+`KWRO*UFLTSZ` (visualise outer bracket)
+`#P-LTZ` (paste)
+{edit sentence}
+<7>`{ we}[ obviously] yank words from here`
+why do{} use -P? It's because it[] means coPy...
+`why do we use -P? It's because it obviously means coPy...`
 
-The final test...
-<3>`use text here to edit text below: [coPy]{Fisualise}<Blot>`
-<1>cONGRATULATIONS YOU have now learnt [yank], {visualise} and <delete>!
-`<2>Congratulations you have now learnt coPy, Fisualise and Blot!`
+The final test... Let's do this
+<5>{instructions}
+`#SKW-RLTZ` → escape I (SKW is left hand `i` for fingerspelling)
+`WEFRLTSZ` → `viW` (visualise inner word)
+`TPWR-LTZ` → `~` (toggle case)
+`#W-RLTZ` → `W` (next word)
+`WEFLTSZ` (visualise inner word)
+`WR-LTZ` (u)
+<7>
+`#S-B` (up 1 line)
+`KWRO*EPLTSZ` (yank inner bracket)
+`#S-R` (down 1 line)
+`KWRO*UFLTSZ` (visualise outer bracket)
+`#P-LTZ` (paste)
+<6>
+`#S-B` (up 1 line)
+`KWRAO*EPLTSZ` (yank inner brace)
+`#S-R` (down 1 line)
+`KWRAO*UFLTSZ` (visualise outer brace)
+`#P-LTZ` (paste)
+<6>
+`#S-B` (up 1 line)
+`KWRA*EPLTSZ` (yank inner angle bracket)
+`#S-R` (down 1 line)
+`KWRA*UFLTSZ` (visualise outer angle bracket)
+`#P-LTZ` (paste)
+{edit sentence}
+`use text here to edit text below: [coPy]{Fisualise}<Blot>`
+<8>cONGRATULATIONS YOU have now learnt [yank], {visualise} and <delete>!
+`<8>Congratulations you have now learnt coPy, Fisualise and Blot!`
 
 the full list of command object commands are shown below:
 <4> {go down 20 lines}
@@ -360,6 +414,6 @@ the full list of command object commands are shown below:
 }
 <20> There is no need to learn all of them at once (so don't feel intimidated)
 depending on how good this tutorial turns out I may make an advanced tutorial
-for command letter covering all of these...
+for command letter covering all of these in the future.
 ==============================================================================
  vim:tw=78:ts=2:et:ft=help:norl:
