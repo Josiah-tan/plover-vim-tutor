@@ -6,6 +6,7 @@ quick-setup                                                       |plover-vim-qu
 relative-numbers                                                  |plover-vim-relative-numbers|
 Josiah-modifiers                                                  |plover-vim-Josiah-modifiers|
 miscellaneous                                                     |plover-vim-miscellaneous|
+find-object                                                       |plover-vim-find-object|
 command-object                                                    |plover-vim-command-object|
 
 ==============================================================================
@@ -196,7 +197,7 @@ Essentially, commands strictly in the form:
 `<command><object>`
 <5> The commands of the form are not covered:
 <command><something-in-the-middle><object>
-i.e. `ciw` |plover-vim-command-object|, `ftd` |plover-vim-find-object|
+i.e. `ciw` |plover-vim-command-object|, `dfd` |plover-vim-find-object|
 these are covered in later sections of this document
 
 <5> the unique ender for |plover-vim-miscellaneous| is `-TZ` (extended steno: `@G`)
@@ -280,6 +281,83 @@ here are all of the default available commands:
 <24> if this tutorial gets popular in the future, I may make more tutorials for miscellaneous commands covering the rest of the features listed here
 
 ==============================================================================
+find-object                                                      *plover-vim-find-object*
+
+<5> make sure to have completed |plover-vim-Josiah-modifiers| and
+|plover-vim-miscellaneous| before learning find-object...
+what is a "find-object" command?
+Essentially, commands strictly in the form:
+<command><find><object>
+the unique ender for |plover-vim-find-object| is `-LTDZ` 
+(extended steno: `@LG`)
+ring finger on `-LT` and pinky on `-DZ`
+
+<9>Firstly, let's learn how to move left and right to an object...
+`U` → `f` (move right to character)
+`E` → `F` (move left to character)
+this should intuitively make sense because...
+E is to the left of U
+or in other words...
+U is to the right of E
+
+alright time for an example!
+<9>{read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`KRURLTDZ` → `fC` (forwards to C)
+`#TPWR*LTZ` → `~` (toggle case)
+`TPHURLTZ` → `fN` (forwards to N)
+`#TPWR*LTZ` → `~` (toggle case)
+`HURLTDZ` → `fH` (forwards to H)
+`#TPWR*LTZ` → `~` (toggle case)
+{edit sentence}
+<9>correCt the iNcorrect letters in tHis sentence.
+`<9>correct the ilcorrect letters in this sentence.`
+
+let's do the same thing but backwards!
+<4>{read instructions}
+`#A-RLTZ` → `escape A` (go end of line)
+`TURLTDZ` → `FT` (forwards to T)
+`#TPWR*LTZ` → `~` (toggle case)
+`KURLTZ` → `FK` (forwards to K)
+`#TPWR*LTZ` → `~` (toggle case)
+`TPHURLTDZ` → `FN` (forwards to N)
+`#TPWR*LTZ` → `~` (toggle case)
+{edit sentence}
+<9> correct iNcorrect letters bacKwards in this senTence.
+`<9> correct incorrect letters backwards in this sentence.`
+
+Now if you add a `#` to `U` or `E` then something special happens:
+`#U` → `t` (move right but exclude character)
+`#E` → `T` (move left but exclude character)
+(little bit hard to visualise, but hopefully the example below clarifies this)
+
+In this example we are going to substitute spaces for characters.
+<9> {read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`#PULTDZ` → `tp` (forwards to, but excluding p)
+`S-PTZ` → `rs` (replace with s)
+`#HULTDZ` → `th` (forwards to, but excluding h)
+`T-PTZ` → `rt` (replace with t)
+`#SKULTDZ` → `te` (forwards to, but excluding e)
+`S-PTZ` → `rs` (replace with s)
+{edit sentence}
+<9>substitute extra  paces in  his  entence.
+`<9>substitute extra spaces in this sentence.`
+
+Let's do the same thing but backwards!
+<4> {read instructions}
+`#A-RLTZ` → `escape A` (go end of line)
+`#RELTDZ` → `Tr` (backwards to, but excluding r)
+`S-PTZ` → `rd` (replace with d)
+`#PELTDZ` → `Tp` (backwards to, but excluding p)
+`T-PTZ` → `ra` (replace with a)
+`#PWELTDZ` → `Tb` (backwards to, but excluding b)
+`S-PTZ` → `rs` (replace with s)
+{edit sentence}
+<9>sub titute incorrect sp ces backwar s in this sentence.
+`<9>substitute incorrect spaces backwards in this sentence.`
+
+==============================================================================
 command-object                                                   *plover-vim-command-object*
 
 <5> make sure to have completed |plover-vim-Josiah-modifiers| before learning
@@ -331,29 +409,29 @@ let's learn how to yank and paste text objects!
 
 Let's learn how to visualise (highlight) text objects!
 <4>{instructions}
-`#SKW-RLTZ` → escape I (SKW is left hand `i` for fingerspelling)
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `WEFRLTSZ` → `viW` (visualise inner word)
 `TPWR-LTZ` → `~` (toggle case)
 `#W-RLTZ` → `W` (next word)
-`WEFLTSZ` (visualise inner word)
-`WR-LTZ` (u)
+`WEFLTSZ` → `viw` (visualise inner word)
+`WR-LTZ` → `u` (lowercase)
 {edit sentence}
 <8>wHAT DOES -F even stand for? Fish? Frisbee? Fisualise?
 `<9>What does -F even stand for? Fish? Frisbee? Fisualise?`
 
 let's combine both yank and highlight on braces and brackets.
 <4>{instructions}
-`#SKW-RLTZ` → escape I (SKW is left hand `i` for fingerspelling)
-`KWRAO*EPLTSZ` (yank inner brace)
-`#S-R` (down 1 line)
-`KWRAO*UFLTSZ` (visualise outer brace)
-`#P-LTZ` (paste)
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`KWRAO*EPLTSZ` → `yi}` (yank inner brace)
+`#S-R` → `down` (down 1 line)
+`KWRAO*UFLTSZ` → `va}` (visualise outer brace)
+`#P-LTZ` → `p` (paste)
 <6>
-`#S-B` (up 1 line)
-`KWRO*EPLTSZ` (yank inner bracket)
-`#S-R` (down 1 line)
-`KWRO*UFLTSZ` (visualise outer bracket)
-`#P-LTZ` (paste)
+`#S-B` → `up` (up 1 line)
+`KWRO*EPLTSZ` → `yi]` (yank inner bracket)
+`#S-R` → `down` (down 1 line)
+`KWRO*UFLTSZ` → `va]` (visualise outer bracket)
+`#P-LTZ` → `p` (paste)
 {edit sentence}
 <7>`{ we}[ obviously] yank words from here`
 why do{} use -P? It's because it[] means coPy...
@@ -361,30 +439,30 @@ why do{} use -P? It's because it[] means coPy...
 
 The final test... Let's do this
 <4>{instructions}
-`#SKW-RLTZ` → escape I (SKW is left hand `i` for fingerspelling)
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `WEFRLTSZ` → `viW` (visualise inner word)
 `TPWR-LTZ` → `~` (toggle case)
 `#W-RLTZ` → `W` (next word)
-`WEFLTSZ` (visualise inner word)
-`WR-LTZ` (u)
+`WEFLTSZ` → `viw` (visualise inner word)
+`WR-LTZ` → `u` (lowercase)
 <7>
-`#S-B` (up 1 line)
-`KWRO*EPLTSZ` (yank inner bracket)
-`#S-R` (down 1 line)
-`KWRO*UFLTSZ` (visualise outer bracket)
-`#P-LTZ` (paste)
+`#S-B` → `up` (up 1 line)
+`KWRO*EPLTSZ` → `yi]` (yank inner bracket)
+`#S-R` → `down` (down 1 line)
+`KWRO*UFLTSZ` → `va]` (visualise outer bracket)
+`#P-LTZ` → `p`(paste)
 <6>
-`#S-B` (up 1 line)
-`KWRAO*EPLTSZ` (yank inner brace)
-`#S-R` (down 1 line)
-`KWRAO*UFLTSZ` (visualise outer brace)
-`#P-LTZ` (paste)
+`#S-B` → `up` (up 1 line)
+`KWRAO*EPLTSZ` → `yi}` (yank inner brace)
+`#S-R` → `down` (down 1 line)
+`KWRAO*UFLTSZ` → `va}` (visualise outer brace)
+`#P-LTZ` → `p` (paste)
 <6>
-`#S-B` (up 1 line)
-`KWR*EPLTSZ` (yank inner parenthesis)
-`#S-R` (down 1 line)
-`KWR*UFLTSZ` (visualise outer parenthesis)
-`#P-LTZ` (paste)
+`#S-B` → `up` (up 1 line)
+`KWR*EPLTSZ` → `yi)` (yank inner parenthesis)
+`#S-R` → `down` (down 1 line)
+`KWR*UFLTSZ` → `va)` (visualise outer parenthesis)
+`#P-LTZ` → `p` (paste)
 {edit sentence}
 `use text here to edit text below: [coPy]{Fisualise}(Blot)`
 <8>cONGRATULATIONS YOU have now learnt [yank], {visualise} and (delete)!
