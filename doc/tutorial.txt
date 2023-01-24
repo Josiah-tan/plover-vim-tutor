@@ -33,7 +33,7 @@ run the following commands:
 :set scrolloff=9
 
 modifiable → allows you to modify the file
-Scrolloff = 9 Grants Ability To See At Least 9 Lines Above/Below Your Cursor
+scrolloff = 9 grants ability to see at least 9 lines above/below your cursor
  
 in plover gui go tick configure → output → enable at start
 
@@ -150,7 +150,7 @@ let's learn how to do terminal splits using `EU`!
 `2`
 `3`
 `4`
-<9> {read below}
+<5> {read below}
 Here the available defaults for Josiah modifiers feel free to change to your liking:
 prefixes = { "#": "control(j)",
         "E": "escape",  # EscapE
@@ -196,10 +196,10 @@ Essentially, commands strictly in the form:
 `<command><object>`
 <5> The commands of the form are not covered:
 <command><something-in-the-middle><object>
-i.e. ciw |plover-vim-command-object|, ftd |plover-vim-find-object|
+i.e. `ciw` |plover-vim-command-object|, `ftd` |plover-vim-find-object|
 these are covered in later sections of this document
 
-<6> the unique ender for |plover-vim-miscellaneous| is `-TZ` (extended steno: `@G`)
+<5> the unique ender for |plover-vim-miscellaneous| is `-TZ` (extended steno: `@G`)
 ring finger on `-T` and pinky on `-Z` 
 let's first learn `z<object>`
 `z` → `-FPB (ZeN)
@@ -235,11 +235,11 @@ Now we learn `r<object>`
 
 <3>let's learn the `repeat` operation:
 `repeat` → `#-P` `(rePeat)`
-<3>{read instructions}
+{read instructions}
 `#KWR-PTZ` → `yy` (yank line)
 `#P-LTZ` → `p` (paste)
 {follow above on sentence below}
-<7> without repeat you would have to double tap...
+<6> without repeat you would have to double tap...
 `<7> without repeat you would have to double tap...`
 `<7> without repeat you would have to double tap...`
 
@@ -250,8 +250,8 @@ Now we learn `r<object>`
 replace with appropriate characters using `-P`
 good luck!
 {edit sentence}
-<7> congratulation] o> learnin} miscellaneoup commandd!
-`<1> congratulations on learning miscellaneous commands!`
+<7> congratulation] o> learnin} miscellaneoup commands!
+`<7> congratulations on learning miscellaneous commands!`
 
 <3> {go down 24 lines}
 here are all of the default available commands:
@@ -290,8 +290,7 @@ essentially, commands of the form:
 `<command><middle><object>`
 for example: `ciw`, `gcip`, `ya}`
 <7>the unique ender for command object is `-LTSZ` (extended steno: `@L`)
-ring finger on `-T` and pinky on `-SZ` or
-ring finger on `-TS` and pinky on `-Z`
+ring finger on `-LT` and pinky on `-SZ`
 
 let's first learn `c<middle><object>`
 `c` → `-B` (Blot)
@@ -303,7 +302,7 @@ let's first learn `c<middle><object>`
 `WR-FLTZ` → `control(u)` (deletes to start of line)
 `KWR*UBLTSZ` → `ca)` (deletes around parentheses)
 {edit sentence}
-<5>you think plover-vim is hard to learn? Nah. (not really)
+<6>you think plover-vim is hard to learn? Nah. (not really)
 `plover-vim is hard to learn? Nah.`
 
 <3>{read instructions}
@@ -322,7 +321,7 @@ let's learn how to yank and paste text objects!
 `WURPLTSZ` → `yaW` (yank around word)
 `#ARLTZ` → `A` (go to end of line)
 `#P-LTZ` → `p` (paste)
-`#PW-RLTZ × 2` → `b × 2` (backwards 2 words)
+`#PW-RLTZ × 2` → `B × 2` (backwards 2 words)
 `WERLTZ` → `yiw` (yank inner word)
 `#ARLTZ` → `A` (go to end of line)
 `#P-LTZ` → `p` (paste)
@@ -382,13 +381,13 @@ The final test... Let's do this
 `#P-LTZ` (paste)
 <6>
 `#S-B` (up 1 line)
-`KWRA*EPLTSZ` (yank inner angle bracket)
+`KWR*EPLTSZ` (yank inner parenthesis)
 `#S-R` (down 1 line)
-`KWRA*UFLTSZ` (visualise outer angle bracket)
+`KWR*UFLTSZ` (visualise outer parenthesis)
 `#P-LTZ` (paste)
 {edit sentence}
-`use text here to edit text below: [coPy]{Fisualise}<Blot>`
-<8>cONGRATULATIONS YOU have now learnt [yank], {visualise} and <delete>!
+`use text here to edit text below: [coPy]{Fisualise}(Blot)`
+<8>cONGRATULATIONS YOU have now learnt [yank], {visualise} and (delete)!
 `<8>Congratulations you have now learnt coPy, Fisualise and Blot!`
 
 the full list of command object commands are shown below:
