@@ -1,5 +1,5 @@
 ==============================================================================
-Tutorial                                                           plover-vim-tutorial
+Tutorial                                                           *plover-vim-tutorial*
 
 quick-install                                                     |plover-vim-quick-install|
 quick-setup                                                       |plover-vim-quick-setup|
@@ -8,7 +8,7 @@ Josiah-modifiers                                                  |plover-vim-Jo
 command-object                                                    |plover-vim-command-object|
 
 ==============================================================================
-quick-install                                                      plover-vim-quick-install
+quick-install                                                      *plover-vim-quick-install*
 
 - Download plover and find the executable
 	- see this https://plover.readthedocs.io/en/latest/cli_reference.html for finding the location of plover depending on which platform you are using (Linux, Windows, etc.)
@@ -22,7 +22,7 @@ https://github.com/Josiah-tan/plover-vim/tree/main/templates/tutor
 if you want to try extended steno instead, then get `extended/escaped_customised.py`, you will need to change to the plover-stenotype-vim for this to work.
 
 ==============================================================================
-quick-setup                                                        plover-vim-quick-setup
+quick-setup                                                        *plover-vim-quick-setup*
 
 run the following commands:
 >vim
@@ -36,7 +36,7 @@ Scrolloff = 18 Grants Ability To See At Least 18 Lines Above/Below Your Cursor
 in plover gui go tick configure → output → enable at start
 
 ==============================================================================
-relative-numbers                                                   plover-vim-relative-numbers
+relative-numbers                                                   *plover-vim-relative-numbers*
 
 make sure you have done `:set relativenumber` first!
 
@@ -72,7 +72,7 @@ move your cursor to the beginning of the line at |starthere| (below)
 <24> congratulations on finishing the relative number challenge!
 
 ==============================================================================
-Josiah-modifiers                                                   plover-vim-Josiah-modifiers
+Josiah-modifiers                                                   *plover-vim-Josiah-modifiers*
 
 <5> make sure you have learnt Emily modifiers before continuing...
 Here we use `-LTZ` as our unique ender (for extended steno use `@`)
@@ -115,7 +115,7 @@ solution (spoiler wall):
 steno solution:
 `#W-RLTZ #W-LTZ #W-LTZ WR-FLTZ #SK-LTZ #KP-LTZ #SK-LTZ #SK-RLTZ #KP-LTZ`
 
-<7>
+<6>
 
 let's learn how to do terminal splits using `EU`!
 (go ahead and try the following!)
@@ -138,7 +138,7 @@ You may be thinking... What on earth is control(j)? That's a very good question
 control(j) is basically a vim hack from user2
 https://github.com/openstenoproject/plover/discussions/1350#discussioncomment-1905781
 it is written below in case you want to chuck it in your vimrc (recommended!)
-<8> {go 16 down}
+<6> {go 16 down}
 >vim
 "do nothing in normal mode
 nore <c-j> <nop> 
@@ -160,7 +160,7 @@ If you have made it this far, well done! Congratulations on completing
 Josiah-modifiers!
 
 ==============================================================================
-command-object                                                   plover-vim-command-object
+command-object                                                   *plover-vim-command-object*
 
 <8> make sure to have completed |plover-vim-Josiah-modifiers| before learning
 command-object...
@@ -169,24 +169,101 @@ What is command object?
 essentially, commands of the form:
 `<command><middle><object>`
 for example: `ciw`, `gcip`, `ya}`
-
-the unique ender for command object is `-TSZ` (extended steno: `@L`)
+<7> {go to start of line `SKW-RLTZ`}
+the unique ender for command object is `-LTSZ` (extended steno: `@L`)
 ring finger on `-T` and pinky on `-SZ` or
 ring finger on `-TS` and pinky on `-Z`
 let's first learn `c<middle><object>`
 `c` → `-B` (Blot)
 `i` → `E` (inner: closer to the middle of the keyboard)
 `a` → `U` (outer: away from the middle of the keyboard)
+{edit the line below}:
+<9>you think plover-vim is hard to learn? Nah. (not really)
+`plover-vim is hard to learn? Nah.`
 
-<16> why not[just] use d instead of c? Well {I guess}d <just>is not needed in plover vim...
+press `#W-RLTZ` three times
+press `WR-FLTZ` to delete to the start of the line
+press `KWR*UBLTSZ` to delete around parentheses
 
-using the information above make the line above look like the line below:
-
+{edit the line below}:
+<8> why not[just] use d instead of c? Well {I guess}d <just>is not needed in plover vim...
 `why not[] use d instead of c? Well d is not needed in plover vim...`
 
+
+
+
+<6>
 possible solution (spoilers!):
-I ci] ca} W ca>
-`#SKW-RLTZ KWRO*EBTSZ KWRAO*UBTSZ #W-RLTZ KWRA*EBTSZ`
-`#SKW@R KWRO@*EBL KWRAO@*UBL #W@R KWRA@*UBL`
+Qwerty: I ci] ca} W ca>
+steno: `#SKW-RLTZ KWRO*EBLTSZ KWRAO*UBLTSZ #W-RLTZ KWRA*EBLTSZ`
+extended: `#SKW@R KWRO@*EBL KWRAO@*UBL #W@R KWRA@*UBL`
+<5> {go to start of line `SKW-RLTZ`}
+let's learn how to yank and paste text objects!
+{follow the instructions below}
+<2> yank me! 
+`<2> yank me! yank me!`
+press `#W-RLTZ` (go to next word)
+press `WUPLTSZ` (yank around word)
+press `#ARLTZ` (go to end of line)
+press `#P-LTZ` (paste)
+press `#PW-RLTZ` twice (go back two words)
+press `WERLTZ` (yank inner word)
+go to end of line and paste
+<9> {go to start of line `SKW-RLTZ`}
+
+Let's learn how to visualise (highlight) text objects!
+{follow the instructions below to properly case the words}
+<3>wHAT DOES -F even stand for? Fish? Frisbee? Fisualise?
+`<3>What does -F even stand for? Fish? Frisbee? Fisualise?`
+press `#SK-RLTZ` (go to end of word)
+press `WEFLTSZ` (visualise inner word)
+press `TPWR-LTZ` (toggle case)
+press `WEFLTSZ` (visualise inner word)
+press `WR-LTZ` (u)
+<7> {go to start of line `SKW-RLTZ`}
+
+let's combine both yank and highlight on braces and brackets.
+<3>`{ do}[ we] yank words from here`
+{paste text from above to the line below}:
+<2>why{}[] use -P? It's because it obviously means coPy...
+`<2> why do we use -P? It's because it obviously means coPy...`
+press `KWR@*EPLTSZ` (yank inner brace)
+press `#T-R` (go down 2 lines)
+press `KWRAO*UFLTSZ` (visualise outer brace)
+press `#P-LTZ` (paste)
+press `#T-B` (go up 2 lines)
+press `KWRO*EPLTSZ` (yank inner bracket)
+go down two lines visualise and paste
+<9> {go to start of line `SKW-RLTZ`}
+
+The final test...
+<3>`use text here to edit text below: [coPy]{Fisualise}<Blot>`
+<1>cONGRATULATIONS YOU have now learnt [yank], {visualise} and <delete>!
+`<2>Congratulations you have now learnt coPy, Fisualise and Blot!`
+
+the full list of command object commands are shown below:
+<4> {go down 20 lines}
+{
+"-FPB": "<escape> equal <middles> <objects>",
+"-FP": "<escape> y s <middles> <objects>",  # coPy Furround
+"-FB": "<escape> shift(greater) <middles> <objects>",  # FB looks like half an > arrow
+"-PB": "escape g c <middles> <objects>",  # commeNt
+"-F": "<escape> v <middles> <objects>",  # Fisualise
+"-P": "<escape> y <middles> <objects>",  # coPy
+"-B": "<escape> c <middles> <objects>",  # Blot
+"": "<escape> g shift(u) <middles> <objects>",
+
+"#-FPB": "<escape> v <middles> <objects> shift(asciitilde)",
+"#-FP": "escape c x <middles> <objects>",  # vim exFPange
+"#-FB": "<escape> less <middles> <objects>",
+"#-PB": "escape g b <middles> <objects>",
+"#-F": "<escape> v <middles> <objects> p",  # visualise and paste!
+"#-P": "<escape> shift(quotedbl) shift(plus) y <middles> <objects>",
+"#-B": "<escape> g shift(question) <middles> <objects>", # Bguestion
+"#": "<escape> g u <middles> <objects>",
+}
+<20> There is no need to learn all of them at once (so don't feel intimidated)
+depending on how good this tutorial turns out I may make an advanced tutorial
+for command letter covering all of these...
 ==============================================================================
  vim:tw=78:ts=2:et:ft=help:norl:
