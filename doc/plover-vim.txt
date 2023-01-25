@@ -39,26 +39,25 @@ Concept                                                          *plover-vim-con
 - full support for steno with neovim and vim
 - remove need for painful fingerspelling
 - linearity in memorisation, uses Emily modifiers as baseline
-- only main "systematic vim language" features covered
+- only main "systematic" vim language features covered
 
 ==============================================================================
 Background                                                       *plover-vim-background*
 
-- In general I found stenography to be more ergonomic for writing prose and
-  figured that it would translate to a more ergonomical coding
-  experience
-- Like in the past I found myself feeling a little bit sore  after writing
-  things like alt tab, control c, control v (the classics 😉), as well as
-  upper symbol keys and numbers (well, I only have a laptop keyboard)...
-- Then one day Aerick posted his "Emily modifiers" video, which absolutely
-  blew my mind. It meant you could literally one stroke literally every
- combination of commands systematically (video: https://www.youtube.com/watch?v=uQZp7RX-h6o)
-- It was after this video I asked the plover community if there was something
-  similar for vim... Turns out, there was "plovary", but that was incomplete
-  at the time...
-- So even after 10 years after plover came to life... No one had created an
-  actual working vim system.
-- That is... Until now
+In general I found stenography to be more ergonomic for writing prose and
+figured that it would translate to a more ergonomical coding experience
+Like in the past I found myself feeling a little bit sore after writing
+things like alt tab, control c, control v (the classics 😉), as well as
+upper symbol keys and numbers (well, I only have a laptop keyboard)...
+Then one day Aerick posted his "Emily modifiers" video, which absolutely
+blew my mind. It meant you could literally one stroke literally every
+ombination of commands systematically (video: https://www.youtube.com/watch?v=uQZp7RX-h6o)
+It was after this video I asked the plover community if there was something
+similar for vim... Turns out, there was "plovary", but that was incomplete
+at the time...
+So even after 10 years after plover came to life... No one had created an
+actual working vim system.
+That is... Until now
 
 ==============================================================================
 Principles                                                     *plover-vim-principles*
@@ -147,7 +146,7 @@ FAQ                                                          *plover-vim-FAQ*
 ==============================================================================
 useful-links                                                *plover-vim-useful-links*
 
-(for anything in blue, hover and press shift-K)
+(for anything in blue, hover with cursor and press shift-K)
 link to the tutorial here: |plover-vim-tutorial|
 link to the cheatsheet here: |plover-vim-cheatsheet|
 
