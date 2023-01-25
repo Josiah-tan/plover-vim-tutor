@@ -30,9 +30,8 @@ CONTENTS                                                          *plover-vim-co
 Concept                                                          |plover-vim-concept|
 Background                                                       |plover-vim-background|
 Principles                                                       |plover-vim-principles|
-Tutorial                                                         |plover-vim-tutorial|
 FAQ                                                              |plover-vim-FAQ|
-
+useful-links                                                     |plover-vim-useful-links|
 
 ==============================================================================
 Concept                                                          *plover-vim-concept*
@@ -62,8 +61,7 @@ Background                                                       *plover-vim-bac
 - That is... Until now
 
 ==============================================================================
-Principles
-*plover-vim-principles*
+Principles                                                     *plover-vim-principles*
 
 - First, we want to create a system of commands as listed in this table:
 
@@ -143,5 +141,12 @@ FAQ                                                          *plover-vim-FAQ*
 - Is plover-vim faster than Qwerty?
     - Maybe, depends on how much you use it compared to Qwerty
  
+==============================================================================
+useful-links                                                *plover-vim-useful-links*
+
+(for anything in blue, hover and press shift-K)
+link to the tutorial here: |plover-vim-tutorial|
+link to the cheatsheet here: |plover-vim-cheatsheet|
+
 ==============================================================================
  vim:tw=78:ts=2:et:ft=help:norl:
