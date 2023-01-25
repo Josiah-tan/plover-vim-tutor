@@ -232,7 +232,7 @@ Now we learn `r<object>`
 `W-LTZ` → `w` (forward a word)
 `S-PTZ` → `rS` (replace with S)
 {edit sentence}
-<9>The primeagen made his good spot video private...
+<9>The crimeagen made his sood dpot video private...
 `<9>The Primeagen made his Good Spot video private...`
 
 <3>let's learn the `repeat` operation:
