@@ -107,6 +107,7 @@ How? Well, we use `#` to `prefix` the command with `escape`
 {instructions}
 `#SKW-RLTZ` → escape I (SKW is left hand `i` for fingerspelling)
 `#W-RLTZ` → `W` (next word)
+`SKW-LTZ` → `i` (only need for escaped_customised.py)
 `KWEUBG` → `quick` 
 `AO*LTZ` → `space` (performs a space)
 {write the sentence below}
@@ -151,7 +152,7 @@ let's learn how to do terminal splits using `EU`!
 `2`
 `3`
 `4`
-<5> {read below}
+<8> {read below}
 Here the available defaults for Josiah modifiers feel free to change to your liking:
 prefixes = { "#": "control(j)",
         "E": "escape",  # EscapE
@@ -296,9 +297,9 @@ ring finger on `-LT` and pinky on `-DZ`
 `U` → `f` (move right to character)
 `E` → `F` (move left to character)
 this should intuitively make sense because...
-E is to the left of U
-or in other words...
-U is to the right of E
+U is right of E
+E is left of U
+
 
 alright time for an example!
 <9>{read instructions}
@@ -360,7 +361,7 @@ Let's do the same thing but backwards!
 ==============================================================================
 command-object                                                   *plover-vim-command-object*
 
-<5> make sure to have completed |plover-vim-Josiah-modifiers| before learning
+<6> make sure to have completed |plover-vim-Josiah-modifiers| before learning
 command-object...
 
 What is command object?
@@ -376,7 +377,7 @@ let's first learn `c<middle><object>`
 `a` → `U` (outer: away from the middle of the keyboard)
 <7>{read instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
-`#W-RLTZ × 3` → `W × 3` (next word)
+`#W-RLTZ × 2` → `W × 2` (next word)
 `WR-FLTZ` → `control(u)` (deletes to start of line)
 `KWR*UBLTSZ` → `ca)` (deletes around parentheses)
 {edit sentence}
