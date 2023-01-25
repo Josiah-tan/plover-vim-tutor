@@ -139,7 +139,7 @@ FAQ                                                          *plover-vim-FAQ*
     - You just need to memorise a few commands and which category they belong
       in, after that you are basically set
 - Is plover-vim faster than fingerspelling?
-    - Yes
+    - Yes, in the long run
 - Is plover-vim faster than Qwerty?
     - Maybe, depends on how much you use it compared to Qwerty
  
