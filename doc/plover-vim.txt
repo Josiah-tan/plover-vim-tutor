@@ -45,7 +45,6 @@ Concept                                                          *plover-vim-con
 ==============================================================================
 Background                                                       *plover-vim-background*
 
-- Feel free to skip (shift(k)) to the |plover-vim-tutorial| if you are not interested in the background
 - In general I found stenography to be more ergonomic for writing prose and
   figured that it would translate to a more ergonomical coding
   experience
@@ -65,9 +64,6 @@ Background                                                       *plover-vim-bac
 ==============================================================================
 Principles
 *plover-vim-principles*
-
-- feel free to skip to the |plover-vim-tutorial| if you are not interested in
-  the principles.
 
 - First, we want to create a system of commands as listed in this table:
 
