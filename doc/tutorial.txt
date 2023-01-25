@@ -16,8 +16,8 @@ quick-install                                                      *plover-vim-q
 	- see this https://plover.readthedocs.io/en/latest/cli_reference.html for finding the location of plover depending on which platform you are using (Linux, Windows, etc.)
 - Now run this command to install the library
 <
-<plover_executable> -s plover_plugins install plover_vim
-<
+<plover_executable> -s plover_plugins install plover_vim plover-stenotype-vim
+
 get `escaped_customised.py` and add it to your dictionaries:
 https://github.com/Josiah-tan/plover-vim/tree/main/templates/tutor
 
