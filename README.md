@@ -23,7 +23,7 @@ for plover-vim-tutor exercises:
 :help plover-vim-tutorial
 ```
 
-for cheatsheet (TODO):
+for cheatsheet:
 
 ```vim
 :help plover-vim-cheatsheet

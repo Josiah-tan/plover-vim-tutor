@@ -1,0 +1,54 @@
+==============================================================================
+cheatsheet                                                          *plover-vim-cheatsheet*
+
+left hand fingerspelling:
+| SKW | i |
+| WR  | u |
+| SK  | e |
+
+Josiah-modifiers (`-LTZ` or `@`):
+|    |               | Emily  | - | #   | ctrl-j | control(j)   |
+| E  | esc           | Escape | - | #E  | ctrl-x | eX command   |
+| U  | ctrl-b        | tmUx   | - | #U  |        | customisable |
+| EU | ctrl-j ctrl-w | wIndow | - | #EU | ctrl-r | regIster     |
+
+miscellaneous commands (`-TZ` or `@G`):
+| F   | g  | good Spot     | #F   | S      | Furround |
+| P   | r  | replace       | #P   | repeat | rePeat   |
+| B   | '  | marBg         | #B   | m      |          |
+| FP  | @  | @CHat         | #FP  | q      |          |
+| PB  | gl | lioN          | #PB  | gL     |          |
+| FB  | cs | Blot Furround | #FB  | ds     |          |
+| FPB | z  | ZeN           | #FPB |        |          |
+| EFP | [  |               |      |        |          |
+| UFP | ]  |               |      |        |          |
+|     |    |               | #EU  | "      | register |
+
+finder-commands (`-LTDZ` or `@LG`):
+| E  | F    | - | #E  | T | - | F | v |
+| U  | f    | - | #U  | t | - | P | y |
+| EU | easy | - | #EU |   | - | B | c |
+
+command-object (`-LTSZ` or `@L`):
+|     | gU |                  | - | #    | gu  |                   |
+| F   | v  | Fisualise        | - | #F   | vp  | Fisualise & paste |
+| P   | y  | coPy             | - | #P   | "+y |                   |
+| B   | c  | Blot             | - | #B   | g?  | Bguestion         |
+| FP  | ys | coPy Furround    | - | #FP  | cx  | exFPange          |
+| PB  | gc | commeNt          | - | #PB  | gb  | commeNt           |
+| FB  | >  | half arrow       | - | #FB  | <   |                   |
+| FPB | =  | similar to Emily | - | #FPB | g~  | similar to Emily  |
+
+recommended plover-vim layout:
+| # | T | P | H | * | * | F | P | L | T | D | ~
+| S | K | W | R | * | * | R | B | G | S | Z | ~
+|   |   |   |   |   |   |   |   |   |   |   | ~
+|   |   | A | O |   |   | E | U |   |   |   | ~
+
+recommended extended-plover-vim layout:
+| + | # | T | P | H | @ | * | F | P | L | T | D | ~
+| ^ | S | K | W | R | @ | * | R | B | G | S | Z | ~
+|   |   |   |   |   |   |   |   |   |   |   |   | ~
+|   |   |   | A | O |   |   | E | U |   |   |   | ~
+==============================================================================
+ vim:tw=78:ts=2:et:ft=help:norl:
