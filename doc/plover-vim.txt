@@ -92,7 +92,7 @@ Principles
 |     |     | -A- | -O- |     |     | =E= | =U= |     |     |     | ~
 
 - consider `-LGTSDZ` "unique ender" cluster:
-    -  we choose `-TSZ` for these "command objects"
+    -  we choose `-LTSZ` for these "command objects"
 - consider `-FPB` "command" cluster:
     - `v` → `+F+` (Fisualise)
     - `c` → `+B+` (Blot)
@@ -107,21 +107,21 @@ Principles
 
 - Example of `caw`:
 
-| -#- | -T- | -P- | -H- | -*- | -*- | -F- | -P- | -L- | /T/ | -D- |
+| -#- | -T- | -P- | -H- | -*- | -*- | -F- | -P- | /L/ | /T/ | -D- |
 | -S- | -K- | /W/ | -R- | -*- | -*- | -R- | /B/ | -G- | /S/ | /Z/ |
 |     |     |     |     |     |     |     |     |     |     |     |
 |     |     | -A- | -O- |     |     | -E- | /U/ |     |     |     |
 
 - Example of `yie`:
 
-| -#- | -T- | -P- | -H- | -*- | -*- | -F- | /P/ | -L- | /T/ | -D- |
+| -#- | -T- | -P- | -H- | -*- | -*- | -F- | /P/ | /L/ | /T/ | -D- |
 | /S/ | /K/ | -W- | -R- | -*- | -*- | -R- | -B- | -G- | /S/ | /Z/ |
 |     |     |     |     |     |     |     |     |     |     |     |
 |     |     | -A- | -O- |     |     | /E/ | -U- |     |     |     |
 
 - Example of `va}`:
 
-| -#- | -T- | -P- | -H- | /*/ | /*/ | /F/ | -P- | -L- | /T/ | -D- |
+| -#- | -T- | -P- | -H- | /*/ | /*/ | /F/ | -P- | /L/ | /T/ | -D- |
 | -S- | /K/ | /W/ | /R/ | /*/ | /*/ | -R- | -B- | -G- | /S/ | /Z/ |
 |     |     |     |     |     |     |     |     |     |     |     |
 |     |     | /A/ | /O/ |     |     | -E- | /U/ |     |     |     |
