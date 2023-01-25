@@ -142,6 +142,8 @@ FAQ                                                          *plover-vim-FAQ*
 - Is plover-vim-extended better than plover-vim?
     - It doesn't use Philly shift so it's faster to use I suppose.
     - Also slightly more ergonomic
+- Will there be a speedrun of this?
+    - Yes, probably soon
  
 ==============================================================================
 useful-links                                                *plover-vim-useful-links*

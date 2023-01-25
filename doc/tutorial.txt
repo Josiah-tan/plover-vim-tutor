@@ -111,7 +111,7 @@ How? Well, we use `#` to `prefix` the command with `escape`
 `KWEUBG` → `quick` 
 `AO*LTZ` → `space` (performs a space)
 {write the sentence below}
-<8>the brown fox jumps over the lazy dog.
+<9>the brown fox jumps over the lazy dog.
 `<8>the quick brown fox jumps over the lazy dog.`
 
 let's learn the rest of left hand fingerspelling (Abby):
@@ -412,7 +412,7 @@ putting it all together:
 `#OLTZ` → `o` (new line)
 `#PLTZ` → `p` (paste)
 `TPH*ELTDZ` → `Fn` (backward n)
-`#TPH*EBLTDZ` → `dF(` (delete backward `(`)
+`#TPH*EBLTDZ` → `dF(` (delete backward `(`)                                                   ignore this))
 {edit sentence}
 <9>Node* updateTree(Node* node){}
 `<9>Node* updateTree(Node* head){}`
@@ -450,28 +450,29 @@ let's first learn `c<middle><object>`
 `KWRAO*UBLTSZ` → `ca}` (delete inner brace)
 `#W-RLTZ` → `W` (next word)
 `KWRA*EBLTSZ` → `ca>` (delete inner angle bracket)
-`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 {edit sentence}
-<8> why not[just] use d instead of c? Well {I guess}d <just>is not needed in plover vim...
+<7> why not[just] use d instead of c? Well {I guess}d <just>is not needed in plover vim...
 `<7> why not[] use d instead of c? Well d is not needed in plover vim...`
 
 let's learn how to yank and paste text objects!
 `P` → `y` (coPy)
-<4>{read instructions}
+<5>{read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `WURPLTSZ` → `yaW` (yank around word)
 `#ARLTZ` → `A` (go to end of line)
 `#P-LTZ` → `p` (paste)
+<5>
 `#PW-RLTZ × 2` → `B × 2` (backwards 2 words)
 `WERLTZ` → `yiw` (yank inner word)
 `#ARLTZ` → `A` (go to end of line)
 `#P-LTZ` → `p` (paste)
 {edit sentence}
-<9>yank me 
-`<9>yank me <9>yank me`
+<6>yank me 
+`<6>yank me <9>yank me`
 
 Let's learn how to visualise (highlight) text objects!
 `F` → `v` (Fisualise)
-<4>{instructions}
+<5>{instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `WEFRLTSZ` → `viW` (visualise inner word)
 `TPWR-LTZ` → `~` (toggle case)
