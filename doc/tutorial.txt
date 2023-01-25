@@ -358,10 +358,70 @@ Let's do the same thing but backwards!
 <9>sub titute incorrect sp ces backwar s in this sentence.
 `<9>substitute incorrect spaces backwards in this sentence.`
 
+well, moving is pretty neat but wouldn't it be nice to try using the `-FPB` cluster?
+`F` → `v` (Fisualise)
+`P` → `y` (coPy)
+`B` → `c` (Blot)
+(I know it's weird but... well... I had to come up with something.)
+
+<9>let's first start with fisualise!
+Fisualise:
+`-F` → `v`
+<3>{read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`SUFLTDZ` → `vfs` (visualise forward s)
+`WR-RLTZ` → `U` (uppercase u)
+`TRAO*LTZ` → `escape`
+`SKWULTDZ` → `fi` (forward i)
+`PUFLTDZ` → `vfP` (visualise forward p)
+`WR-RLTZ` → `U` (uppercase u)
+{edit sentence}
+<9>from sales inner join products
+`<9>FROM Sales INNER JOIN Products`
+
+let's try blotting (delete)!
+`-B` → `d`
+<5>{read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`RULTDZ × 2` → `fr × 2` (forward r)
+`#SUBLTDZ` → `dts` (delete to s)
+`KWR*ULTDZ` → `f)` (forward `)`)
+`#TK*UBLTDZ` → `dt:` (delete to :)
+{edit sentence}
+<7>for i in range(len(someList)):
+`<7>for i in someList:`
+
+the final one: coPying
+`-P` → `y`
+<5>{read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`RULTDZ` → `fr` (forward r)
+`#TK*UPLTDZ` → `yt:` (coPy to :)
+`#OLTZ` → `o` (new line)
+`#PLTZ` → `p` (paste)
+{edit sentence}
+<7>def reverseLinkedList(head):
+`<7>def reverseLinkedList(head):`
+`reverseLinkedList(head)`
+
+putting it all together:
+<5>{read instructions}
+`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+`WRULTDZ` → `fu` (forward u)
+`#TPHAO*UPLTDZ` → `yt{` (yank forward {)
+`#OLTZ` → `o` (new line)
+`#PLTZ` → `p` (paste)
+`TPH*ELTDZ` → `Fn` (backward n)
+`#TPH*EBLTDZ` → `dF(` (delete backward `(`)
+{edit sentence}
+<9>Node* updateTree(Node* node){}
+`<9>Node* updateTree(Node* head){}`
+`updateTree(head)`
+
 ==============================================================================
 command-object                                                   *plover-vim-command-object*
 
-<6> make sure to have completed |plover-vim-Josiah-modifiers| before learning
+<7> make sure to have completed |plover-vim-Josiah-modifiers| before learning
 command-object...
 
 What is command object?
@@ -396,6 +456,7 @@ let's first learn `c<middle><object>`
 `<7> why not[] use d instead of c? Well d is not needed in plover vim...`
 
 let's learn how to yank and paste text objects!
+`P` → `y` (coPy)
 <4>{read instructions}
 `WURPLTSZ` → `yaW` (yank around word)
 `#ARLTZ` → `A` (go to end of line)
@@ -409,6 +470,7 @@ let's learn how to yank and paste text objects!
 `<9>yank me <9>yank me`
 
 Let's learn how to visualise (highlight) text objects!
+`F` → `v` (Fisualise)
 <4>{instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `WEFRLTSZ` → `viW` (visualise inner word)
