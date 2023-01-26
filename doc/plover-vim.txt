@@ -18,10 +18,10 @@ recommended layout for plover-vim
 
 recommended layout for plover-vim-extended (not compulsory)
 
-| + | # | T | P | H | @ | * | F | P | L | T | D | ~
-| ^ | S | K | W | R | @ | * | R | B | G | S | Z | ~
-|   |   |   |   |   |   |   |   |   |   |   |   | ~
-|   |   |   | A | O |   |   | E | U |   |   |   | ~
+| # | T | P | H | @ | * | F | P | L | T | D | ~
+| S | K | W | R | @ | * | R | B | G | S | Z | ~
+|   |   |   |   |   |   |   |   |   |   |   | ~
+|   |   | A | O |   |   | E | U |   |   |   | ~
 
 
 ==============================================================================

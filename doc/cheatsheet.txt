@@ -46,9 +46,9 @@ recommended plover-vim layout:
 |   |   | A | O |   |   | E | U |   |   |   | ~
 
 recommended extended-plover-vim layout:
-| + | # | T | P | H | @ | * | F | P | L | T | D | ~
-| ^ | S | K | W | R | @ | * | R | B | G | S | Z | ~
-|   |   |   |   |   |   |   |   |   |   |   |   | ~
-|   |   |   | A | O |   |   | E | U |   |   |   | ~
+| # | T | P | H | @ | * | F | P | L | T | D | ~
+| S | K | W | R | @ | * | R | B | G | S | Z | ~
+|   |   |   |   |   |   |   |   |   |   |   | ~
+|   |   | A | O |   |   | E | U |   |   |   | ~
 ==============================================================================
  vim:tw=78:ts=2:et:ft=help:norl:
