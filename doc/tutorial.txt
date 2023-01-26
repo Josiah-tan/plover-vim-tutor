@@ -53,7 +53,7 @@ move your cursor to the beginning of the line at |starthere| (below)
 <17> press `#S-RL` 
 <15> press `#S-FR` 
 <13> press `#SH-R` 
-<11> press `#SEUR` 
+<11> press `#STR` 
 <9>  press `#-SOR` 
 <7>  press `#-RL`  
 <5>  press `#-FR`  
@@ -64,7 +64,7 @@ move your cursor to the beginning of the line at |starthere| (below)
 <4>  press `#AB`   
 <6>  press `#-PB`  
 <8>  press `#-BT`  
-<10> press `#SP`   
+<10> press `#SEUB`   
 <12> press `#SP-B` 
 <14> press `#SAB`
 <16> press `#S-PB` 
@@ -86,11 +86,10 @@ write out the sentence with steno...
 {write sentence below}: 
 <7>
 `<7>the brown fox jumps over the lazy dog.`
-{notes}:
 Why is there no space between `<7>` and `the`?
 Plover-vim is built with space suppression which is often more favorable for coding (uses {plover:clear_trans_state} internally)
 
-<6>now let's do some editing!
+<5>now let's do some editing!
 {read instructions below}
 `SKW-RLTZ` → `I` (SKW is left hand fingerspelling)
 `TRAO*LTZ` → `escape`
@@ -107,7 +106,7 @@ How? Well, we use `#` to `prefix` the command with `escape`
 {instructions}
 `#SKW-RLTZ` → escape I (SKW is left hand `i` for fingerspelling)
 `#W-RLTZ` → `W` (next word)
-`SKW-LTZ` → `i` (only need for escaped_customised.py)
+`#SKW-LTZ` → `i` (only required for escaped_customised.py)
 `KWEUBG` → `quick` 
 `AO*LTZ` → `space` (performs a space)
 {write the sentence below}
@@ -130,7 +129,8 @@ let's learn the rest of left hand fingerspelling (Abby):
 `jumps over the lazy dog.`
 
 let's learn how to do terminal splits using `EU`!
-<4>{try the following}
+`EU` → `escape control(w)` (wIndow)
+<5>{try the following}
 `SEULTZ` → escape control(w) s (horizontal split)
 `SREULTZ` → escape control(w) v (vertical split)
 `OEULTZ` → escape control(w) o (close all windows)
@@ -204,50 +204,50 @@ these are covered in later sections of this document
 <5> the unique ender for |plover-vim-miscellaneous| is `-TZ` (plover-stenotype-vim: `@G`)
 ring finger on `-T` and pinky on `-Z` 
 let's first learn `z<object>`
-`z` → `-FPB (ZeN)
+`-FPB` → `z` (ZeN)
 <4>{try the following}:
-`STKPW-FPBTZ` → zz (center screen middle)
-`PW-FPBTZ` → zb (center screen bottom)
-`T-FPBTZ` → zt (center screen zt)
+`STKPW-FPBTZ` → `zz` (center screen middle)
+`PW-FPBTZ` → `zb` (center screen bottom)
+`T-FPBTZ` → `zt` (center screen zt)
 
 z is often also used for folding code
 <6> the g command `g<object>`: 
-`g` → `-F` (the Good Spot - The Primeagen)
+`-F` → `g` (the Good Spot - The Primeagen)
 <2>{read instructions}
 `#SR-RLTZ` → `V` (visualise line)
 `TRAO*LTZ` → `escape`
-`#SR-FTZ` → gv (go to last highlight)
+`SR-FTZ` → `gv` (go to last highlight)
 `TRAO*LTZ` → `escape`
 {follow above on sentence below}
 <6>highlight me!
 
 Now we learn `r<object>` 
-`r` → `-R` (`Replace`)
+`-P` → `r` (`rePlace`)
 <4>{read instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
-`W-RLTZ` → `W` (forward a word)
-`P-LTZ` → `rP`(replace with P)
+`#W-RLTZ` → `W` (forward a word)
+`P-RPTZ` → `rP` (replace with P)
 `W-LTZ × 3` → `w × 3`  (forward 3 words)
 `TKPW-FRTZ` → `rG` (replace with G)
-`W-LTZ` → `w` (forward a word)
-`S-PTZ` → `rS` (replace with S)
+`#W-LTZ` → `w` (forward a word)
+`S-RPTZ` → `rS` (replace with S)
 {edit sentence}
 <9>The crimeagen made his sood dpot video private...
 `<9>The Primeagen made his Good Spot video private...`
 
 <3>let's learn the `repeat` operation:
-`repeat` → `#-P` `(rePeat)`
+`#-P` → `repeat` `(rePeat)`
 {read instructions}
 `#KWR-PTZ` → `yy` (yank line)
 `#P-LTZ` → `p` (paste)
 {follow above on sentence below}
 <6> without repeat you would have to double tap...
-`<7> without repeat you would have to double tap...`
-`<7> without repeat you would have to double tap...`
+`<6> without repeat you would have to double tap...`
+`<6> without repeat you would have to double tap...`
 
-<4> a little bit of revision {go to start of line first}:
+<4> a little bit of revision:
 {read instructions}
-`ARLTZ` → A (go to end of the line)
+`#ARLTZ` → A (go to end of the line)
 `SK-FTZ` → ge (end of the previous word)
 replace with appropriate characters using `-P`
 good luck!
@@ -306,22 +306,22 @@ alright time for an example!
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `KRURLTDZ` → `fC` (forwards to C)
 `#TPWR*LTZ` → `~` (toggle case)
-`TPHURLTZ` → `fN` (forwards to N)
+`TPHURLTDZ` → `fN` (forwards to N)
 `#TPWR*LTZ` → `~` (toggle case)
 `HURLTDZ` → `fH` (forwards to H)
 `#TPWR*LTZ` → `~` (toggle case)
 {edit sentence}
 <9>correCt the iNcorrect letters in tHis sentence.
-`<9>correct the ilcorrect letters in this sentence.`
+`<9>correct the incorrect letters in this sentence.`
 
 let's do the same thing but backwards!
 <4>{read instructions}
 `#A-RLTZ` → `escape A` (go end of line)
-`TURLTDZ` → `FT` (forwards to T)
+`TERLTDZ` → `FT` (backwards to T)
 `#TPWR*LTZ` → `~` (toggle case)
-`KURLTZ` → `FK` (forwards to K)
+`KERLTDZ` → `FK` (backwards to K)
 `#TPWR*LTZ` → `~` (toggle case)
-`TPHURLTDZ` → `FN` (forwards to N)
+`TPHERLTDZ` → `FN` (backwards to N)
 `#TPWR*LTZ` → `~` (toggle case)
 {edit sentence}
 <9> correct iNcorrect letters bacKwards in this senTence.
@@ -330,7 +330,6 @@ let's do the same thing but backwards!
 Now if you add a `#` to `U` or `E` then something special happens:
 `#U` → `t` (move right but exclude character)
 `#E` → `T` (move left but exclude character)
-(little bit hard to visualise, but hopefully the example below clarifies this)
 
 In this example we are going to substitute spaces for characters.
 <9> {read instructions}
@@ -349,9 +348,9 @@ Let's do the same thing but backwards!
 <4> {read instructions}
 `#A-RLTZ` → `escape A` (go end of line)
 `#RELTDZ` → `Tr` (backwards to, but excluding r)
-`S-PTZ` → `rd` (replace with d)
+`TK-PTZ` → `rd` (replace with d)
 `#PELTDZ` → `Tp` (backwards to, but excluding p)
-`T-PTZ` → `ra` (replace with a)
+`A-PTZ` → `ra` (replace with a)
 `#PWELTDZ` → `Tb` (backwards to, but excluding b)
 `S-PTZ` → `rs` (replace with s)
 {edit sentence}
@@ -359,14 +358,13 @@ Let's do the same thing but backwards!
 `<9>substitute incorrect spaces backwards in this sentence.`
 
 well, moving is pretty neat but wouldn't it be nice to try using the `-FPB` cluster?
-`F` → `v` (Fisualise)
-`P` → `y` (coPy)
-`B` → `c` (Blot)
+`-F` → `v` (Fisualise)
+`-P` → `y` (coPy)
+`-B` → `c` (Blot)
 (I know it's weird but... well... I had to come up with something.)
 
 <9>let's first start with fisualise!
-Fisualise:
-`-F` → `v`
+`-F` → `v` (Fisualise)
 <3>{read instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `SUFLTDZ` → `vfs` (visualise forward s)
@@ -380,10 +378,10 @@ Fisualise:
 `<9>FROM Sales INNER JOIN Products`
 
 let's try blotting (delete)!
-`-B` → `d`
+`-B` → `d` (Blot)
 <5>{read instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
-`RULTDZ × 2` → `fr × 2` (forward r)
+`RULTDZ × 2` → `fr × 2` (2 forward r)
 `#SUBLTDZ` → `dts` (delete to s)
 `KWR*ULTDZ` → `f)` (forward `)`)
 `#TK*UBLTDZ` → `dt:` (delete to :)
@@ -392,7 +390,7 @@ let's try blotting (delete)!
 `<7>for i in someList:`
 
 the final one: coPying
-`-P` → `y`
+`-P` → `y` (coPy)
 <5>{read instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `RULTDZ` → `fr` (forward r)
@@ -412,7 +410,7 @@ putting it all together:
 `#OLTZ` → `o` (new line)
 `#PLTZ` → `p` (paste)
 `TPH*ELTDZ` → `Fn` (backward n)
-`#TPH*EBLTDZ` → `dF(` (delete backward `(`)                                                   ignore this))
+`#TPH*EBLTDZ` → `dT(` (delete backward `(`)                                                   ))
 {edit sentence}
 <9>Node* updateTree(Node* node){}
 `<9>Node* updateTree(Node* head){}`
@@ -432,9 +430,9 @@ for example: `ciw`, `gcip`, `ya}`
 ring finger on `-LT` and pinky on `-SZ`
 
 let's first learn `c<middle><object>`
-`c` → `-B` (Blot)
-`i` → `E` (inner: closer to the middle of the keyboard)
-`a` → `U` (outer: away from the middle of the keyboard)
+`-B` → `c` (Blot)
+`E` → `i` (inner: closer to the middle of the keyboard)
+`U` → `a` (outer: away from the middle of the keyboard)
 <7>{read instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `#W-RLTZ × 2` → `W × 2` (next word)
@@ -463,7 +461,7 @@ let's learn how to yank and paste text objects!
 `#P-LTZ` → `p` (paste)
 <5>
 `#PW-RLTZ × 2` → `B × 2` (backwards 2 words)
-`WERLTZ` → `yiw` (yank inner word)
+`WERLTSZ` → `yiw` (yank inner word)
 `#ARLTZ` → `A` (go to end of line)
 `#P-LTZ` → `p` (paste)
 {edit sentence}
@@ -475,7 +473,7 @@ Let's learn how to visualise (highlight) text objects!
 <5>{instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `WEFRLTSZ` → `viW` (visualise inner word)
-`TPWR-LTZ` → `~` (toggle case)
+`TPWR*LTZ` → `~` (toggle case)
 `#W-RLTZ` → `W` (next word)
 `WEFLTSZ` → `viw` (visualise inner word)
 `WR-LTZ` → `u` (lowercase)
@@ -495,7 +493,7 @@ let's combine both yank and highlight on braces and brackets.
 `KWRO*EPLTSZ` → `yi]` (yank inner bracket)
 `#S-R` → `down` (down 1 line)
 `KWRO*UFLTSZ` → `va]` (visualise outer bracket)
-`#P-LTZ` → `p` (paste)
+`P-LTZ` → `p` (paste)
 {edit sentence}
 <7>`{ we}[ obviously] yank words from here`
 why do{} use -P? It's because it[] means coPy...
@@ -505,7 +503,7 @@ The final test... Let's do this
 <4>{instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `WEFRLTSZ` → `viW` (visualise inner word)
-`TPWR-LTZ` → `~` (toggle case)
+`TPWR*LTZ` → `~` (toggle case)
 `#W-RLTZ` → `W` (next word)
 `WEFLTSZ` → `viw` (visualise inner word)
 `WR-LTZ` → `u` (lowercase)
@@ -514,7 +512,7 @@ The final test... Let's do this
 `KWRO*EPLTSZ` → `yi]` (yank inner bracket)
 `#S-R` → `down` (down 1 line)
 `KWRO*UFLTSZ` → `va]` (visualise outer bracket)
-`#P-LTZ` → `p`(paste)
+`#P-LTZ` → `p` (paste)
 <6>
 `#S-B` → `up` (up 1 line)
 `KWRAO*EPLTSZ` → `yi}` (yank inner brace)
