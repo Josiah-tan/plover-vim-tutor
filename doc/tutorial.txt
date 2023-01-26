@@ -21,7 +21,7 @@ quick-install                                                      *plover-vim-q
 get `escaped_customised.py` and add it to your dictionaries:
 https://github.com/Josiah-tan/plover-vim/tree/main/templates/tutor
 
-if you want to try extended steno instead, then select `extended/escaped_customised.py`
+if you want to try plover-stenotype-vim instead, then select `extended/escaped_customised.py`
 in plover gui go select configure → system → plover-stenotype-vim
 
 ==============================================================================
@@ -78,7 +78,7 @@ move your cursor to the beginning of the line at |starthere| (below)
 Josiah-modifiers                                                   *plover-vim-Josiah-modifiers*
 
 <5> make sure you have learnt Emily modifiers before continuing...
-Here we use `-LTZ` as our unique ender (for extended steno use `@`)
+Here we use `-LTZ` as our unique ender (for plover-stenotype-vim use `@`)
 
 {read instructions below}
 `ARLTZ` → `A` (end of the line)
@@ -201,7 +201,7 @@ Essentially, commands strictly in the form:
 i.e. `ciw` |plover-vim-command-object|, `dfd` |plover-vim-find-object|
 these are covered in later sections of this document
 
-<5> the unique ender for |plover-vim-miscellaneous| is `-TZ` (extended steno: `@G`)
+<5> the unique ender for |plover-vim-miscellaneous| is `-TZ` (plover-stenotype-vim: `@G`)
 ring finger on `-T` and pinky on `-Z` 
 let's first learn `z<object>`
 `z` → `-FPB (ZeN)
@@ -290,7 +290,7 @@ what is a "find-object" command?
 Essentially, commands strictly in the form:
 <command><find><object>
 the unique ender for |plover-vim-find-object| is `-LTDZ` 
-(extended steno: `@LG`)
+(plover-stenotype-vim: `@LG`)
 ring finger on `-LT` and pinky on `-DZ`
 
 <9>Firstly, let's learn how to move left and right to an object...
@@ -428,7 +428,7 @@ What is command object?
 essentially, commands of the form:
 `<command><middle><object>`
 for example: `ciw`, `gcip`, `ya}`
-<7>the unique ender for command object is `-LTSZ` (extended steno: `@L`)
+<7>the unique ender for command object is `-LTSZ` (plover-stenotype-vim: `@L`)
 ring finger on `-LT` and pinky on `-SZ`
 
 let's first learn `c<middle><object>`

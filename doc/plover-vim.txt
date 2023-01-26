@@ -16,7 +16,7 @@ recommended layout for plover-vim
 |   |   |   |   |   |   |   |   |   |   |   | ~
 |   |   | A | O |   |   | E | U |   |   |   | ~
 
-recommended layout for plover-vim-extended (not compulsory)
+recommended layout for plover-stenotype-vim (not compulsory)
 
 | # | T | P | H | @ | * | F | P | L | T | D | ~
 | S | K | W | R | @ | * | R | B | G | S | Z | ~
@@ -45,7 +45,7 @@ Concept                                                          *plover-vim-con
 Background                                                       *plover-vim-background*
 
 In general I found stenography to be more ergonomic for writing prose and
-figured that it would translate to a more ergonomical coding experience
+figured that it would translate to a more ergonomical coding experience.
 In the past I found myself feeling a little bit sore after writing
 things like alt tab, control c, control v (the classics 😉), as well as
 upper symbol keys and numbers (well, I only have a laptop keyboard)...
@@ -60,7 +60,7 @@ actual working vim system.
 That is, until now...
 
 (
-to be fair user2 did have some really good ideas that made this project
+To give credit, user2 did have some really good ideas that made this project
 possible
 https://github.com/openstenoproject/plover/discussions/1350
 )
@@ -84,11 +84,11 @@ Principles                                                     *plover-vim-princ
 | y | yaw | yie | ya} |
 | v | vaw | vie | va} |
 
-- This is the main idea that makes vim so powerful, you can learn things "linearly"
+- this is the main idea that makes vim so powerful, you can learn things "linearly"
 - (note: e is from the entire plugin https://github.com/kana/vim-textobj-entire)
 
 - so how does this apply to plover-vim?
-- well, first of all, here's the normal steno layout
+- well, first of all here's the normal steno layout (different clusters annotated)
 
 | -#- | -T- | -P- | -H- | -*- | -*- | +F+ | +P+ | \L\ | \T\ | \D\ | ~
 | -S- | -K- | -W- | -R- | -*- | -*- | -R- | +B+ | \G\ | \S\ | \Z\ | ~
@@ -96,7 +96,7 @@ Principles                                                     *plover-vim-princ
 |     |     | -A- | -O- |     |     | =E= | =U= |     |     |     | ~
 
 - consider `\LGTSDZ\` "unique ender" cluster:
-    -  we choose `\LTSZ\` for these "command objects"
+    -  we choose `\LTSZ\` or for these "command objects" (plover-stenotype-vim: `@L`)
 - consider `-FPB` "command" cluster:
     - `v` → `+F+` (Fisualise)
     - `c` → `+B+` (Blot)
@@ -146,7 +146,7 @@ FAQ                                                          *plover-vim-FAQ*
     - Yes, in the long run
 - Is plover-vim faster than Qwerty?
     - Maybe, depends on how much you use it compared to Qwerty
-- Is plover-vim-extended better than plover-vim?
+- Is plover-stenotype-vim better than normal plover-vim?
     - It doesn't use Philly shift so it's faster to use I suppose.
     - Also slightly more ergonomic
 - Will there be a speedrun of this?
