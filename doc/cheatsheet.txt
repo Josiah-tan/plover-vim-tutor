@@ -8,13 +8,13 @@ left hand fingerspelling:
 
 Josiah-modifiers (`-LTZ` or `@`):
 |    |               | Emily  | - | #   | ctrl-j | control(j)   |
-| E  | esc           | Escape | - | #E  | ctrl-x | eX command   |
+| E  | esc           | Escape | - | #E  | ctrl-x | Ex command   |
 | U  | ctrl-b        | tmUx   | - | #U  |        | customisable |
 | EU | ctrl-j ctrl-w | wIndow | - | #EU | ctrl-r | regIster     |
 
 miscellaneous commands (`-TZ` or `@G`):
 | F   | g  | good Spot     | #F   | S      | Furround |
-| P   | r  | replace       | #P   | repeat | rePeat   |
+| P   | r  | rePlace       | #P   | repeat | rePeat   |
 | B   | '  | marBg         | #B   | m      |          |
 | FP  | @  | @CHat         | #FP  | q      |          |
 | PB  | gl | lioN          | #PB  | gL     |          |
