@@ -332,7 +332,7 @@ Now if you add a `#` to `U` or `E` then something special happens:
 `#E` → `T` (move left but exclude character)
 
 In this example we are going to substitute spaces for characters.
-<9> {read instructions}
+<8> {read instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `#PULTDZ` → `tp` (forwards to, but excluding p)
 `S-PTZ` → `rs` (replace with s)
@@ -365,7 +365,7 @@ well, moving is pretty neat but wouldn't it be nice to try using the `-FPB` clus
 
 <9>let's first start with fisualise!
 `-F` → `v` (Fisualise)
-<3>{read instructions}
+<2>{read instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `SUFLTDZ` → `vfs` (visualise forward s)
 `WR-RLTZ` → `U` (uppercase u)
