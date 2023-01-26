@@ -145,12 +145,10 @@ FAQ                                                          *plover-vim-FAQ*
 - Is plover-vim faster than fingerspelling?
     - Yes, in the long run
 - Is plover-vim faster than Qwerty?
-    - Maybe, depends on how much you use it compared to Qwerty
+    - You be the judge of that: |plover-vim-speedruns|
 - Is plover-stenotype-vim better than normal plover-vim?
     - It doesn't use Philly shift so it's faster to use I suppose.
     - Also slightly more ergonomic
-- Will there be a speedrun of the tutorial?
-    - Yes, probably soon
  
 ==============================================================================
 useful-links                                                *plover-vim-useful-links*
@@ -158,6 +156,7 @@ useful-links                                                *plover-vim-useful-l
 (for anything in blue, hover with cursor and press shift-K)
 link to the tutorial here: |plover-vim-tutorial|
 link to the cheatsheet here: |plover-vim-cheatsheet|
+link to speedruns here: |plover-vim-speedruns|
 
 ==============================================================================
  vim:tw=78:ts=2:et:ft=help:norl:

@@ -1,0 +1,17 @@
+==============================================================================
+speedruns                                                        *plover-vim-speedruns*
+
+Basically, trying to finish plover-vim-tutorials as fast as possible
+
+==============================================================================
+official                                                         *plover-vim-speedruns-official*
+
+| NA | NA | NA |
+
+==============================================================================
+unofficial                                                       *plover-vim-speedruns-unofficial*
+
+| Josiah | 2:51 | plover-stenotype-vim | https://www.youtube.com/watch?v=8-oDPhmpN9g |
+
+==============================================================================
+ vim:tw=78:ts=2:et:ft=help:norl:
