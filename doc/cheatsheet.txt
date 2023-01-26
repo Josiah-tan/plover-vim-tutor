@@ -25,9 +25,9 @@ miscellaneous commands (`-TZ` or `@G`):
 |     |    |               | #EU  | "      | register |
 
 finder-commands (`-LTDZ` or `@LG`):
-| E  | F    | - | #E  | T | - | F | v |
-| U  | f    | - | #U  | t | - | P | y |
-| EU | easy | - | #EU |   | - | B | c |
+| E  | F         | - | #E  | T | - | F | v |
+| U  | f         | - | #U  | t | - | P | y |
+| EU | ez motion | - | #EU |   | - | B | c |
 
 command-object (`-LTSZ` or `@L`):
 |     | gU |                  | - | #    | gu  |                   |

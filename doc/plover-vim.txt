@@ -9,14 +9,14 @@
 
 help + tutorials for plover-vim
 
-general layout for plover-vim
+recommended layout for plover-vim
 
 | # | T | P | H | * | * | F | P | L | T | D | ~
 | S | K | W | R | * | * | R | B | G | S | Z | ~
 |   |   |   |   |   |   |   |   |   |   |   | ~
 |   |   | A | O |   |   | E | U |   |   |   | ~
 
-example layout of plover-vim-extended (not compulsory)
+recommended layout for plover-vim-extended (not compulsory)
 
 | + | # | T | P | H | @ | * | F | P | L | T | D | ~
 | ^ | S | K | W | R | @ | * | R | B | G | S | Z | ~
@@ -46,7 +46,7 @@ Background                                                       *plover-vim-bac
 
 In general I found stenography to be more ergonomic for writing prose and
 figured that it would translate to a more ergonomical coding experience
-Like in the past I found myself feeling a little bit sore after writing
+In the past I found myself feeling a little bit sore after writing
 things like alt tab, control c, control v (the classics 😉), as well as
 upper symbol keys and numbers (well, I only have a laptop keyboard)...
 Then one day Aerick posted his "Emily modifiers" video, which absolutely
@@ -55,9 +55,16 @@ ombination of commands systematically (video: https://www.youtube.com/watch?v=uQ
 It was after this video I asked the plover community if there was something
 similar for vim... Turns out, there was "plovary", but that was incomplete
 at the time...
-So even after 10 years after plover came to life... No one had created an
+So, even after 10 years after plover came to life... No one had created an
 actual working vim system.
-That is... Until now
+That is, until now...
+
+(
+to be fair user2 did have some really good ideas that made this project
+possible
+https://github.com/openstenoproject/plover/discussions/1350
+)
+
 
 ==============================================================================
 Principles                                                     *plover-vim-principles*
@@ -88,8 +95,8 @@ Principles                                                     *plover-vim-princ
 |     |     |     |     |     |     |     |     |     |     |     | ~
 |     |     | -A- | -O- |     |     | =E= | =U= |     |     |     | ~
 
-- consider `-LGTSDZ` "unique ender" cluster:
-    -  we choose `-LTSZ` for these "command objects"
+- consider `\LGTSDZ\` "unique ender" cluster:
+    -  we choose `\LTSZ\` for these "command objects"
 - consider `-FPB` "command" cluster:
     - `v` → `+F+` (Fisualise)
     - `c` → `+B+` (Blot)
@@ -99,7 +106,7 @@ Principles                                                     *plover-vim-princ
     - `a` → `=U=` (outer: away from the middle of the keyboard)
 - consider `STKPWHRAO*` "symbols" cluster:
     - `w` → `-W-` (Emily modifiers)
-    - `e` → `-E-` (Abby left hand fingerspelling)
+    - `e` → `-SK-` (Abby left hand fingerspelling)
     - `}` → `-KWRAO*-` (Emily modifiers)
 
 - Example of `caw`:
@@ -128,7 +135,7 @@ FAQ                                                          *plover-vim-FAQ*
 
 - why are plover vim commands backwards? (i.e. opposite of steno order)
     - It is easier to fingerspell on the left side than the right side
-    - There are fewer "commands" than "objects" so "fingerspelling" objects on
+    - There are fewer "commands" than "objects", so "fingerspelling" objects on
       the left side takes priority
 - Will plover-vim take a long time to learn?
     - Once you have mastered Emily modifiers you are basically halfway there,
