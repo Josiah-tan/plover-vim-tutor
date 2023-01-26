@@ -149,7 +149,7 @@ FAQ                                                          *plover-vim-FAQ*
 - Is plover-stenotype-vim better than normal plover-vim?
     - It doesn't use Philly shift so it's faster to use I suppose.
     - Also slightly more ergonomic
-- Will there be a speedrun of this?
+- Will there be a speedrun of the tutorial?
     - Yes, probably soon
  
 ==============================================================================
