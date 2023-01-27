@@ -11,7 +11,7 @@ official                                                         *plover-vim-spe
 ==============================================================================
 unofficial                                                       *plover-vim-speedruns-unofficial*
 
-| Josiah | 2:51 | plover-stenotype-vim | https://www.youtube.com/watch?v=8-oDPhmpN9g |
+| 1 | Josiah | 2:51 | plover-stenotype-vim | https://www.youtube.com/watch?v=8-oDPhmpN9g | 26/1/2023 |
 
 ==============================================================================
  vim:tw=78:ts=2:et:ft=help:norl:
