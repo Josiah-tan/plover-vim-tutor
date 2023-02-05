@@ -212,7 +212,7 @@ let's first learn `z<object>`
 
 z is often also used for folding code
 <6> the g command `g<object>`: 
-`-F` → `g` (the Good Spot - The Primeagen)
+`-F` → `g` (I have no gF)
 <2>{read instructions}
 `#SR-RLTZ` → `V` (visualise line)
 `TRAO*LTZ` → `escape`
@@ -226,14 +226,14 @@ Now we learn `r<object>`
 <4>{read instructions}
 `#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `#W-RLTZ` → `W` (forward a word)
-`P-RPTZ` → `rP` (replace with P)
+`T-PTZ` → `rt` (replace with t)
 `W-LTZ × 3` → `w × 3`  (forward 3 words)
-`TKPW-FRTZ` → `rG` (replace with G)
+`P-FRTZ` → `rP` (replace with P)
 `#W-LTZ` → `w` (forward a word)
-`S-RPTZ` → `rS` (replace with S)
+`SKW-PTZ` → `ri` (replace with i)
 {edit sentence}
-<9>The crimeagen made his sood dpot video private...
-`<9>The Primeagen made his Good Spot video private...`
+<9>Remember chat replace uses r on plover-vim...
+<9>Remember that replace uses P in plover-vim...
 
 <3>let's learn the `repeat` operation:
 `#-P` → `repeat` `(rePeat)`

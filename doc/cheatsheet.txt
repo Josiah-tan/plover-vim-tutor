@@ -13,7 +13,7 @@ Josiah-modifiers (`-LTZ` or `@`):
 | EU | ctrl-j ctrl-w | wIndow | - | #EU | ctrl-r | regIster     |
 
 miscellaneous commands (`-TZ` or `@G`):
-| F   | g  | good Spot     | #F   | S      | Furround |
+| F   | g  | I've no gF    | #F   | S      | Furround |
 | P   | r  | rePlace       | #P   | repeat | rePeat   |
 | B   | '  | marBg         | #B   | m      |          |
 | FP  | @  | @CHat         | #FP  | q      |          |
