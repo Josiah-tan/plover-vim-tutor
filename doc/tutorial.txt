@@ -36,7 +36,7 @@ run the following commands:
 modifiable → allows you to modify the file
 scrolloff = 9 grants ability to see at least 9 lines above/below your cursor
  
-in plover gui go tick configure → output → enable at start
+in plover gui go tick configure → output → start attached
 
 ==============================================================================
 relative-numbers                                                   *plover-vim-relative-numbers*
