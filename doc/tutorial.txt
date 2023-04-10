@@ -54,7 +54,7 @@ move your cursor to the beginning of the line at |starthere| (below)
 <15> press `#S-FR` 
 <13> press `#SH-R` 
 <11> press `#STR` 
-<9>  press `#-SOR` 
+<9>  press `#SOR` 
 <7>  press `#-RL`  
 <5>  press `#-FR`  
 <3>  press `#H-R`  
