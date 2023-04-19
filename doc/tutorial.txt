@@ -116,9 +116,10 @@ How? Well, we use `#` to `prefix` the command with `escape`
 let's learn the rest of left hand fingerspelling (Abby):
 `SK-LTZ` → e
 `WR-LTZ` → u
-<6>{read instructions}
-`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
+{read instructions}
+<7>`#SKW-RLTZ` → `escape I` (SKW is left hand `i` for fingerspelling)
 `#W-RLTZ × 3` → `W × 3` (next word)
+`#SKW-LTZ` → `i` (only required for escaped_customised.py)
 `WR-FLTZ` → `control(u)` (deletes to start of line)
 `#SK-LTZ` → `e` (end of next word)
 `#KP-LTZ` → `x` (delete `k`)
