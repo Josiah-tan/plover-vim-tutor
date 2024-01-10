@@ -53,14 +53,14 @@ move your cursor to the beginning of the line at |starthere| (below)
 <17> press `#S-RL` 
 <15> press `#S-FR` 
 <13> press `#SH-R` 
-<11> press `#STR` 
+<11> press `#ST-R` 
 <9>  press `#SOR` 
 <7>  press `#-RL`  
 <5>  press `#-FR`  
 <3>  press `#H-R`  
 <1>  press `#T-R`  
-<0>  press `#SB`    *starthere* (turn on plover now!)
-<2>  press `#PB`   
+<0>  press `#S-B`    *starthere* (turn on plover now!)
+<2>  press `#P-B`   
 <4>  press `#AB`   
 <6>  press `#-PB`  
 <8>  press `#-BT`  
