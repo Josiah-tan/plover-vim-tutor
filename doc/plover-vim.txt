@@ -133,6 +133,9 @@ Principles                                                     *plover-vim-princ
 ==============================================================================
 FAQ                                                          *plover-vim-FAQ*
 
+- What is the difference between Josiah and Emily modifiers?
+    - Josiah modifiers uses left hand Abby vowels (for e, i and u) to free up
+      the EU cluster, thus switching to this system is easy
 - why are plover vim commands backwards? (i.e. opposite of steno order)
     - It is easier to fingerspell on the left side than the right side
     - There are fewer "commands" than "objects", so "fingerspelling" objects on
