@@ -109,21 +109,21 @@ Principles                                                     *plover-vim-princ
     - `e` → `-SK-` (Abby left hand fingerspelling)
     - `}` → `-KWRAO*-` (Emily modifiers)
 
-- Example of `caw`:
+- Example of `caw` (`WUBLTSZ`):
 
 | -#- | -T- | -P- | -H- | -*- | -*- | -F- | -P- | /L/ | /T/ | -D- |
 | -S- | -K- | /W/ | -R- | -*- | -*- | -R- | /B/ | -G- | /S/ | /Z/ |
 |     |     |     |     |     |     |     |     |     |     |     |
 |     |     | -A- | -O- |     |     | -E- | /U/ |     |     |     |
 
-- Example of `yie`:
+- Example of `yie` (`SKEPLTSZ`):
 
 | -#- | -T- | -P- | -H- | -*- | -*- | -F- | /P/ | /L/ | /T/ | -D- |
 | /S/ | /K/ | -W- | -R- | -*- | -*- | -R- | -B- | -G- | /S/ | /Z/ |
 |     |     |     |     |     |     |     |     |     |     |     |
 |     |     | -A- | -O- |     |     | /E/ | -U- |     |     |     |
 
-- Example of `va}`:
+- Example of `va}` (`KWRAO*UFLTSZ`):
 
 | -#- | -T- | -P- | -H- | /*/ | /*/ | /F/ | -P- | /L/ | /T/ | -D- |
 | -S- | /K/ | /W/ | /R/ | /*/ | /*/ | -R- | -B- | -G- | /S/ | /Z/ |
