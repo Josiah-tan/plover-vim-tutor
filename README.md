@@ -1,6 +1,7 @@
 # plover-vim-tutor
 
-Help files + tutor for learning plover-vim
+- Help files + tutor for learning plover-vim
+- speedrun video [here](https://www.youtube.com/watch?v=8-oDPhmpN9g)
 
 # Installation
 
